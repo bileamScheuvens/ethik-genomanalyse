@@ -1,0 +1,79 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[a4paper,top=20mm,bottom=25mm,left=20mm,right=40mm]{geometry}
+
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{pdfpages}
+
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+\renewcommand{\contentsname}{Inhaltsverzeichnis}
+\renewcommand{\refname}{Quellenangabe}
+\renewcommand{\figurename}{Abbildung}
+\graphicspath{ {./res/} }
+
+
+\newenvironment{somebox}{\par\noindent%
+   \begin{minipage}{\linewidth}}
+   {\end{minipage}\par\vfill}
+
+
+\usepackage[onehalfspacing]{setspace}
+
+\begin{document}
+
+\pagenumbering{gobble}
+\begin{titlepage}
+	\begin{center}
+Hochschule Karlsruhe für Technik und Wirtschaft
+
+\vspace{2cm}
+\LARGE
+\textbf{Ethikbumms}
+
+\vspace{0.5cm}
+\Large
+Mit bisschen Datenschutz bumms
+
+	\end{center}
+\vfill
+\large
+
+Jenny Hilgenberg \& Bileam Scheuvens
+
+
+\vspace{0.5cm}
+Betreuer: Neumann \& Stengel
+
+
+\end{titlepage}
+	\newpage
+
+\tableofcontents
+	\newpage
+
+\pagenumbering{arabic}
+\setcounter{page}{3}
+\section{Einführung}
+
+	\newpage
+
+ \section{Fazit}
+
+	\newpage
+\pagenumbering{gobble}
+\begin{thebibliography}{99}
+
+\bibitem{schreiber} Schreiber, Hans-Peter, 
+\textbf{Gentechnik, Genomanalyse und Ethik} (\textit{Ethik Med \textbf{10}} 1998)
+
+
+\end{thebibliography}
+
+
+\section{Anhang}
+
+\end{document}

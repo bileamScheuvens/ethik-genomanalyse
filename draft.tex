@@ -15,9 +15,6 @@
 
 \graphicspath{ {./res/} }
 
-\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
-    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
-
 
 \begin{document}
 \pagenumbering{gobble}
@@ -52,7 +49,7 @@ Since great responsibility comes with great power, Genetic engineering is as muc
 \subsection{Discovery of Genes}
 While initial speculation about genetics dates back to Hippocrates and Aristotle, who developed theories to explain inheritance\cite{mayr}, it was not until 1856 when Gregor Mendel experimented with cross breeding numerous pea plants to discover patterns in attribute inheritance\cite{mendel}, not knowing his actions would plant a seed within biology that would soon bloom to disrupt areas of daily life far beyond the bounds of academic science.
 The groundbreaking discovery he made was that the activate traits (phenotype) of a given plant is not a mere blend of the visible attributes its parents held, but rather a seemingly random combination of the genetic lineage, meaning even attributes last observed several generations ago could be present\cite{mendel}.
-Mendels work lead to a deeper understanding of the underlying mechanisms of inheritance, dominant and recessive genes and was fundamental to the development of the techniques discussed in this paper.
+Mendels work lead to a deeper understanding of the underlying mechanisms of inheritance, dominant and recessive genes (strings of DNA that are translated into a different product) and was fundamental to the development of the techniques discussed in this paper.
 
 \subsection{Genetic Engineering}
 Human interference in evolution to bend nature to our will goes back at least to 2000 B.C. with strong evidence that the Assyrians artifically pollinated date trees\cite[p.633]{mayr}.
@@ -66,17 +63,29 @@ While originally discovered in 1987, its use for genetic editing was only demons
 It's important to keep in mind that current methods operate on single cells, which while passing the modified DNA on during mitosis, are clearly outnumbered by non modified cells\cite{crispr}.
 This can be worked around in three ways.
 Modify a sufficient number of cells (most likely infeasible for broad changes), modify in an early stage of development, where only a number of cells exist, or germline editing, which means editing the parents germ cells (cells involved in reproduction) in way that the offspring inherits the changes.
-The third approach differs from the other (so called somatic) techniques in that it can irreversibly affect future generations of offspring with undoubtedly vast consequences, which is why there is widespread advocation to refrain from practicing it in humans\cite{dontedit}.
+The third approach differs from the other (so called somatic / nonheritable) techniques in that it can irreversibly affect future generations of offspring with undoubtedly vast consequences, which is why there is widespread advocation to refrain from practicing it in humans\cite{dontedit}.
 
 \subsection{Genome Analysis}
 Necessary for the manipulation of genetic material is first understanding DNA, its function and effects of deviation from the norm, which this paper will focus primarily on.
 Fundamental understanding breaks down into two steps.
 Firstly DNA Sequencing, which means simply determining the sequence of DNA base pairs without interpretation. It enables the diagnosis of point mutations and similarity measurement, as well as forming the base for further analysis.
+
 Secondly gene association studies, which aim to map genetic variants to observable traits and come in two varieties. 
 Genome-wide association studies (GWAS) hope to uncover any correlation between strings of DNA and phenotype, while specific genetic association or gene linkage studies focus on specific variants of a gene (alleles) and examine whether they frequently cooccur with disease\cite{gwas}.
 This endeavour presents numerous challenges stemming from the sheer complexity of the mechanisms at hand.
-Part of the reason this differs from an exact science is changes an organisms environment has on its genome. It is estimated as much 98\% of human DNA is noncoding, id est lacks any apparent purpose\cite{noncoding}. Some of it however is not entirely disfunctional, rather it is dynamically activated and silenced in a process known as epigenetics changes\cite{epigenetics}.
+Part of the reason this differs from an exact science is changes an organisms environment has on its genome. It is estimated as much 98\% of human DNA is noncoding, id est lacks any apparent purpose\cite{noncoding}. Some of it however is not entirely disfunctional, rather it is dynamically activated and silenced in a process known as epigenetics changes by so called regulatory genes\cite{epigenetics}.
 This means the exact same sequence of DNA can express itself differently, rendering direct conclusions about implications a specific gene has almost impossible.
+As of \textbf{ADD DATE} with the completion of the Human Genome Project this has been accomplished\textbf{CITATION NEEDED}.
+The human genome consists of approximately 3.3 billion basepairs by simply cross referencing to a healthy genome, single point mutations can effortlessly be identified, especially with modern high-throughput analysis tools\cite{rawal}.
+Cataloguing such mutations is useful but in itself provides little insight, as chances are the mutation occured a noncoding part.
+Even when mutation occurs in regulatory sequences or as part of a gene single mutations these usually have little effect.
+Its important to keep in mind that with mutations being so common, each cell has a slightly different sequence. The only mutations they share are those that occured in the germ cells that formed the zygote or in the very early stages afterwards.
+Germline mutations occur roughly $\frac{number of base pairs}{2}*10^{-9}$ times per year. In humans that works out to about 1.65 inheritable mutations per year per parent, but when examining the genome of adult humans there is sampling bias at play. Single point mutations with drastic changes usually just render the cells nonviable, consequently an egg being fertilized and developing long enough to be given birth to indicates a mostly intact genome\cite{scally}.
+Somatic mutations occur in the order of magnitute of $ 2*\frac{number of cell divisions}{10^8 base pairs}$, which with 30 trillion cells equates roughly 500 trillion per year\cite{somaticmutation}.
+These usually have no or very little effect, are repaired by the cells dna repair mechanisms or kill the cell either by inhibiting vital function or by causing cell suicide\cite{dnarepair}.
+The unlikely unlikely case that DNA damage results in neither of these scenarios and the cell instead starts rapidly reproducing is what we call cancer.
+
+
 
 	\newpage
 
@@ -97,12 +106,12 @@ The controversy around privacy versus surveillance applies to genome analysis as
 \section{What Does Your Future Look Like}
 
 \subsection{Medical Sector}
-As preventing disease is usually preferable over treating it, a substantial amount of medicine focuses on early detection and prevention. Especially for the class of mendelian disorders, which are characterized by being linkable to a single gene defect, genetic testing has proven to make diagnosis easy and reliable \textbf{[citation needed]}.
-However while a grand number of such diseases exist, they are usually rare so testing might only pay off if the defect is known to run in the family \textbf{[citation needed]}.
-Much bigger potential lies in preventing common disease with either a genetic component or whose causes are spread over several genes and are therefore much harder to pinpoint. This uncertainty neccessarily introduces stochastics and the method known as genetic risk assessment \textbf{[citation needed]}.
+As preventing disease is usually preferable over treating it, a substantial amount of medicine focuses on early detection and prevention. Especially for the class of mendelian disorders, which are characterized by being linkable to a single gene defect, genetic testing has proven to make diagnosis easy and reliable \cite{rawal}.
+However while a grand number of such diseases exist, they are usually rare so testing might only pay off if the defect is known to run in the family \cite{publicopinion}.
+Much bigger potential lies in preventing common disease with either a genetic component or whose causes are spread over several genes and are therefore  harder to pinpoint. This uncertainty neccessarily introduces stochastics and the method known as genetic risk assessment \cite{gwas}.
 Advances here have sprouted the field of pharmagenomics, which utilizes genetic information to practice precision medicine.
 Just like ethnicity, genetic profile has been shown to affect drug response, thus using this knowledge to personalize prescriptions can increase effectiveness and lower cost and side effects \cite{costsaving}.
-Predictive genetic testing does not come without concerns from both experts and the public, the most prominent ones will be discussed in the following\cite{publicopinion}:
+Predictive genetic testing does not come without concerns from both experts and the public, the most prominent ones will be discussed in the following:
 
 \subsubsection{Patient Autonomy}
 The primary role of any new medical instrument should be to serve, therefore patient autonomy and informed consent are non negotiable, which neccessitates public education.
@@ -165,6 +174,11 @@ It might quite literally be the end of evolution and the start of a new biologic
 There are also outcries from a religious perspective arguing that taking responsibility away from god is divinely forbidden\cite{eugenics}.
 
 All of these have to be weighed against the possible good that genetic enhancement might bring and making a definitive recommendation free of moral ambiguity is most likely impossible.
+It quickly becomes a discussion about what it is we as a society are trying to accomplish. For minimizing future suffering overall eugenics might be the obvious choice.
+On the other hand a statement about maximizing joy cannot be made as easily. While healthier lives are certainly desirable, it would quickly become the status quo and no longer something to be grateful for.
+With standards rising it could be equally difficult to fit in so theres no reason to believe a genetically enhanced society would constantly be ecstatic about its accomplishments.
+Futhermore most of the prior arguments assume total confidence in the human ability to manipulate genes, which quite frankly is far from being warranted.
+Theres good reason most of the biological world has agreed to put experimentation in humans on hold\cite{dontedit}.
 
 
  \section{Conclusion}
@@ -194,6 +208,15 @@ All of these have to be weighed against the possible good that genetic enhanceme
 
 \bibitem{gwas} 
 \textbf{GWA (genome-wide association, GWAS)} (Springer Dordrecht, 2008)
+
+\bibitem{scally} A. Scally,
+\textbf{The mutation rate in human evolution and demographic inference} (Elsevier BV, 2016)
+
+\bibitem{dnarepair} H. Lodish, A. Berk, P. Matsudaira, C.A. Kaiser, M. Krieger, M.P. Scott, S.L. Zipursky, J. Darnell 
+\textbf{Molecular Biology of the Cell} (New York WH Freeman, 2004)
+
+\bibitem{somaticmutation} Satoshi Oota,
+\textbf{Somatic mutations – Evolution within the individual} (ScienceDirect, 2019)
 
 \bibitem{noncoding} F. Costa,
 \textbf{Non-coding RNAs, Epigenomics, and Complexity in Human Cells} (Caister Academic Press, 2012)

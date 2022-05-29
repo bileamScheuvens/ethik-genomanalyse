@@ -19,10 +19,7 @@
 \begin{document}
 \pagenumbering{gobble}
 
-\title{Ethikbumms*\\
-{\footnotesize \textsuperscript{*}Mit bisschen Datenschutz bumms}
-\thanks{funding agency}
-}
+\title{Weighing Chances and Use Against Risks and Misuse of Emerging Genome Analysis and Manipulation Technology}
 
 \author{\IEEEauthorblockN{1\textsuperscript{st} Benedict Bileam Scheuvens}
 \IEEEauthorblockA{\textit{Data Science} \\
@@ -74,33 +71,29 @@ Secondly gene association studies, which aim to map genetic variants to observab
 Genome-wide association studies (GWAS) hope to uncover any correlation between strings of DNA and phenotype, while specific genetic association or gene linkage studies focus on specific variants of a gene (alleles) and examine whether they frequently cooccur with disease\cite{gwas}.
 This endeavour presents numerous challenges stemming from the sheer complexity of the mechanisms at hand.
 Part of the reason this differs from an exact science is changes an organisms environment has on its genome. It is estimated as much 98\% of human DNA is noncoding, id est lacks any apparent purpose\cite{noncoding}. Some of it however is not entirely disfunctional, rather it is dynamically activated and silenced in a process known as epigenetics changes by so called regulatory genes\cite{epigenetics}.
-This means the exact same sequence of DNA can express itself differently, rendering direct conclusions about implications a specific gene has almost impossible.
-As of \textbf{ADD DATE} with the completion of the Human Genome Project this has been accomplished\textbf{CITATION NEEDED}.
-The human genome consists of approximately 3.3 billion basepairs by simply cross referencing to a healthy genome, single point mutations can effortlessly be identified, especially with modern high-throughput analysis tools\cite{rawal}.
-Cataloguing such mutations is useful but in itself provides little insight, as chances are the mutation occured a noncoding part.
+This means the exact same sequence of DNA can express itself differently, making direct conclusions about the significance of a specific snippet fall short of reliability.
+In 2003 with the official completion of the Human Genome Project (HGP) this has been accomplished\cite{HGPFAQ}.
+The human genome consists of approximately 3.3 billion basepairs, by cross referencing a healthy genome, single point mutations can be effortlessly identified in theory, especially with modern high-throughput analysis tools\cite{rawal}.
+Unfortunately in the context of genetics this notion of a healthy genome is vague. Not only does a healthy genome not exist, simply averaging the genome of a few relatively healthy adults would do it no justice. Changes in DNA can also come in the form of deletion or addition of bases rendering traditional similarity metrics useless as an applicable method would have to be alignment free, in other words agnostic to the exact position in sequence, rather it should recognize subsequences or repetitions anywhere they show up and compare the frequency. Through the nature of mutation, the 'average genome' also varies widely regionally, the HGP in particular faced criticism for overrepresenting caucasian DNA, owed to the fact that it was conducted on anonymous donations of DNA in the USA\cite{HGPcritic}.
+It should therefore be seen more like a reference frame to possibly detect deviation.
+Cataloguing mutations is useful but by itself often provides little insight, as chances are the mutation occured a noncoding part.
 Even when mutation occurs in regulatory sequences or as part of a gene single mutations these usually have little effect.
 Its important to keep in mind that with mutations being so common, each cell has a slightly different sequence. The only mutations they share are those that occured in the germ cells that formed the zygote or in the very early stages afterwards.
 Germline mutations occur roughly $\frac{number of base pairs}{2}*10^{-9}$ times per year. In humans that works out to about 1.65 inheritable mutations per year per parent, but when examining the genome of adult humans there is sampling bias at play. Single point mutations with drastic changes usually just render the cells nonviable, consequently an egg being fertilized and developing long enough to be given birth to indicates a mostly intact genome\cite{scally}.
-Somatic mutations occur in the order of magnitute of $ 2*\frac{number of cell divisions}{10^8 base pairs}$, which with 30 trillion cells equates roughly 500 trillion per year\cite{somaticmutation}.
+Somatic mutations occur in the order of magnitute of $ 2*\frac{number of cell divisions}{10^8 base pairs}$, which with 30 trillion cells equates to roughly 500 trillion per year\cite{somaticmutation}.
 These usually have no or very little effect, are repaired by the cells dna repair mechanisms or kill the cell either by inhibiting vital function or by causing cell suicide\cite{dnarepair}.
 The unlikely unlikely case that DNA damage results in neither of these scenarios and the cell instead starts rapidly reproducing is what we call cancer.
 
 
-
-	\newpage
-
 \section{Who Are You}
 
 \subsection{DNA and Identity}
-
-	\newpage
 
 \section{What Have You Done}
 
 \subsection{Forensics}
 The controversy around privacy versus surveillance applies to genome analysis as much as to any sensitive technology.
 
-	\newpage
 
 
 \section{What Does Your Future Look Like}
@@ -116,9 +109,9 @@ Predictive genetic testing does not come without concerns from both experts and 
 \subsubsection{Patient Autonomy}
 The primary role of any new medical instrument should be to serve, therefore patient autonomy and informed consent are non negotiable, which neccessitates public education.
 Broad, as well as targeted at populations most susceptible to specific genetic conditions.
-Equally as important is access to testing facilities themselves as well as short wait times for both test and treatment.\cite{publicopinion}.
+Equally as important is access to testing facilities themselves as well as short wait times for both test and treatment\cite{publicopinion}.
 \subsubsection{Genetic Discrimation}
-As discussed in the following chapter, subpar treatment grounded in genome analysis results is no better than discrimination on the basis of sex, race, age or religion.
+As will be discussed in the following chapter, subpar treatment grounded in genome analysis results is no better than discrimination on the basis of sex, race, age or religion.
 \subsubsection{Commercial Use}
 Profit as the primary incentive manages to corrupt even the most honourable endeavour.
 Commercial gene testing and therapy raises the same questions about motive and ethical obligation to help that plagued the medical ethics for millenia.
@@ -128,11 +121,13 @@ If private patents are to be avoided, public resources have to be used towards r
 Distributing those in a fair way however proves difficult. Developing tests is expensive so some conditions need to be prioritized, which in turn requires weighing of different factors. The initial cost of development is just as important as benefit it brings. This is comprised of the reliability of the result, as well as therapy options versus their respective cost. An unreliable result is equally useless from a public health perspective as knowledge about a genetic death sentence.
 Additionally as many tests would only ever affect a small number of people, some argue that the money should either be used for more general genetic tests or towards programs that target public health in a broader sense like adressing diet\cite{publicopinion}.
 \subsubsection{Patient Responsibilities}
-While a general right to data privacy in medicine makes sense for traditional maladies, one might argue that since DNA test results have immediate consequences for relatives theres at least in part a responsibility to inform said relatives of any risks they themselves might face, comparable to infectious disease or STDs\cite{publicopinion}.
+While a general right to data privacy in medicine makes sense for traditional diagnostics, one might argue that since DNA test results have immediate consequences for relatives theres at least in part a responsibility to inform said relatives of any risks they themselves might face, comparable to infectious disease or STDs\cite{publicopinion}.
+This apparent obligation to warn stands in direct conflict with the testers pledge of silence and the testees right to privacy, a conflict that could in theory be resolved with institutions for anonymous testing and subsequent information of concerned parties analogous to HIV testing.
 \subsubsection{Psychological Risks}
 The psychological weight associated with carrying near certain information about the future is not to be underestimated in the context of genetic testing either.
 Just as a cancer diagnosis, discovering to be at high risk of devoloping potentially lethal disease can be devastating, especially if treatment options are limited\cite{publicopinion}.
-
+Depending on the evolution of public debate on the topic, a scenario in which gene therapy is frowned upon in a similar manner to termination of pregnancy by groups within society is also imaginable.
+This would add additional stress and force people at risk for genetic disease to make a choice between social acceptability and their own health.
 
 
 \subsection{Insurance}
@@ -146,9 +141,6 @@ At least in the case of health insurance, this darkness is threatened by introdu
 The inclusion of factors like genetic predisposition to disease in risk analysis is an incredibly helpful tool to doctors when choosing appropriate treatment and taking precautions, but becomes detrimental when accessed by insurance companies\cite{insurancegenes}.
 Legal action to protect against this threat is already being taken, with the USA introducing the Genetic Information Nondiscrimination Act in 2008\cite{insurancegenes}.
 It is vital to human development that we retain trust in and refine the methodology of genetic testing, while at the same time making sure the sensitive informations is stored discretely and genetic discrimination is kept under control.
-
-
-	\newpage
 
 \section{Consequences for Society: Social Compatibility}
 
@@ -183,8 +175,6 @@ Theres good reason most of the biological world has agreed to put experimentatio
 
  \section{Conclusion}
 
-	\newpage
-
 \pagenumbering{gobble}
 \begin{thebibliography}{99}
 
@@ -208,6 +198,12 @@ Theres good reason most of the biological world has agreed to put experimentatio
 
 \bibitem{gwas} 
 \textbf{GWA (genome-wide association, GWAS)} (Springer Dordrecht, 2008)
+
+\bibitem{HGPFAQ}
+\textbf{Human Genome Project FAQ} (https://www.genome.gov/human-genome-project/Completion-FAQ)
+
+\bibitem{HGPcritic} Raymond E. Spier,
+\textbf{The Human Genome Project Under the Microscope} (Science and Engineering Ethics, 1998)
 
 \bibitem{scally} A. Scally,
 \textbf{The mutation rate in human evolution and demographic inference} (Elsevier BV, 2016)

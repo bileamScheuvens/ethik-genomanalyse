@@ -15,19 +15,13 @@
 
 \graphicspath{ {./res/} }
 
-\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
-    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
-
 
 \begin{document}
 \pagenumbering{gobble}
 
-\title{Ethikbumms*\\
-{\footnotesize \textsuperscript{*}Mit bisschen Datenschutz bumms}
-\thanks{Identify applicable funding agency here. If none, delete this.}
-}
+\title{Weighing Chances and Use Against Risks and Misuse of Emerging Genome Analysis and Manipulation Technology}
 
-\author{\IEEEauthorblockN{1\textsuperscript{st} Benedict Blumian Scheuvens}
+\author{\IEEEauthorblockN{1\textsuperscript{st} Benedict Bileam Scheuvens}
 \IEEEauthorblockA{\textit{Data Science} \\
 \textit{Hochschule Karlsruhe}\\
 \textit{University of Applied Sciences} \\
@@ -45,20 +39,26 @@ hije1011@h-ka.de}
 \maketitle
 
 \begin{abstract}
-A few centuries ago, life love and a the universe were a mystery, but driven by deeply rooted human curiosity we are beginning to untangle the mess and understand the foundation that grew consciousness out of thin air. One piece of this puzzle is DesoxyriboNucleic Acid. The genetic material that after being refined by millenia of pure chance and survival holds the blueprint to every living creature on our planet. With growing understanding about its structure and the technological advancements that gave us tools to manipulate it, humanity has set its foot in the doorstep to a world in which DNA is no different than a LEGO brick and nothing is out of reach.
-This paper aims to explore aspects of how this applied genetics will impact us in regard to ethics and data privacy. 
-Genetic engineering is as much blessing as a curse and must be used with caution, while genome analysis unveils a tremendous amount of information not just about us, but about our relatives as well.
+A few centuries ago, life love and a the universe were a mystery, but driven by deeply rooted human curiosity we are beginning to untangle the mess and understand the foundation that grew consciousness out of thin air. One piece of this puzzle is the molecule of life, DeoxyriboNucleic Acid. The genetic material that after being refined by millenia of pure chance and survival holds the blueprint to every living creature on our planet. With growing understanding about its structure and the technological advancements that gave us tools to manipulate it, humanity has set its foot in the doorstep to a world in which DNA is no different than a LEGO brick and nothing is out of reach.
+This paper aims to explore aspects of how applied genetics will impact us in regard to ethics and data privacy. 
+Since great responsibility comes with great power, Genetic engineering is as much blessing as curse and must be used with caution, while genome analysis unveils a tremendous amount of information not just about us, but about our relatives as well and enables more and more accurate predictions about the future.
+This paper summarises the chances and risks of genome analysis broken down in three fundamental questions. \textit{Who are you} focuses on the individual consumer of DNA tests, what is expected to gain from the results and why it is growing in popularity. \textit{What have you done} takes a look at the past of an individual and what information can be tracked by DNA. \textit{What does your future look like} aims at the consequences this information can have.
 \end{abstract}
-
-\section{Introduction}
-This paper summarises the chances and risks of genom analysis broken down in three fundamental questions. \textit{Who are you} focuses on the individual consumer of DNA tests, what is expected to gain from the results and why it is growing in popularity. \textit{What have you done} takes a look at the past of an individual and what information can be tracked by DNA. \textit{What does your future look like} aims at the consequences this information can have.
-
 \section{Historical and Technical Introduction}
 
 \subsection{Discovery of Genes}
 While initial speculation about genetics dates back to Hippocrates and Aristotle, who developed theories to explain inheritance\cite{mayr}, it was not until 1856 when Gregor Mendel experimented with cross breeding numerous pea plants to discover patterns in attribute inheritance\cite{mendel}, not knowing his actions would plant a seed within biology that would soon bloom to disrupt areas of daily life far beyond the bounds of academic science.
 The groundbreaking discovery he made was that the activate traits (phenotype) of a given plant is not a mere blend of the visible attributes its parents held, but rather a seemingly random combination of the genetic lineage, meaning even attributes last observed several generations ago could be present\cite{mendel}.
-Mendels work lead to a deeper understanding of the underlying mechanisms of inheritance, dominant and recessive genes and was fundamental to the development of the techniques discussed in this paper.
+Mendels work lead to a deeper understanding of the underlying mechanisms of inheritance, dominant and recessive genes (strings of DNA that are translated into a different product) and was fundamental to the development of the techniques discussed in this paper.
+
+\subsection{Structure of DNA}
+To aid a discussion a short primer on what DNA actually is may be appropriate, the well initiated reader may skip this section.
+DNA is an acidic molecule present in every complex organism, which encodes the cell function. In its natural form it takes the shape of a double helix. The outer rails, called backbones are made up of phosphate and a pentose sugar called deoxyribose. Each ladder step connecting the backbones is a pair of nitrogenous bases, also called nucleobases. These bases come in the form of chemical compounds called purine (adenine-A \& guanine-G) and pyrimidines (cytosine-C \& thymine-T) which are connected via hydrogen bond.
+These bases form are complementary, meaning a purine always bonds with the corresponding pyrimidine to form the base pairs GC and AT.
+DNA can be cloned by breaking the hydrogen bond, as the rules of complementarity dictate where each free floating base should attach itself.
+Within a cell DNA may be read and transcribed into RNA, a similar but single stranded structure where the nitrogen base uracil-U replacess thymine. RNA is then either processed further translated into amino acids to produce proteins or be expelled from the cell\cite{dnaprimer}. This process is guided by codons, three base long combinations of which there are $4^3 = 64$.
+Except for the start and three stop codons (AUG, UAA, UAG and UGA respectively), which guide where to start and stop translation, each codon codes for one of twenty amino acids\cite{codon}.
+To get an idea of the factors involved in this procedure, the exact enzymes which break apart, or process DNA and its derivates are irrelevant. It is simply important to understand that every protein that makes up life is created from amino acids, the why, when, how, how much and what of which is encodable in the order of short snippets of bases that lie between start and stop codons.
 
 \subsection{Genetic Engineering}
 Human interference in evolution to bend nature to our will goes back at least to 2000 B.C. with strong evidence that the Assyrians artifically pollinated date trees\cite[p.633]{mayr}.
@@ -72,92 +72,158 @@ While originally discovered in 1987, its use for genetic editing was only demons
 It's important to keep in mind that current methods operate on single cells, which while passing the modified DNA on during mitosis, are clearly outnumbered by non modified cells\cite{crispr}.
 This can be worked around in three ways.
 Modify a sufficient number of cells (most likely infeasible for broad changes), modify in an early stage of development, where only a number of cells exist, or germline editing, which means editing the parents germ cells (cells involved in reproduction) in way that the offspring inherits the changes.
-The third approach differs from the other (so called somatic) techniques in that it can irreversibly affect future generations of offspring with undoubtedly vast consequences, which is why there is widespread advocation to refrain from practicing it in humans\cite{dontedit}.
+The third approach differs from the other (so called somatic / nonheritable) techniques in that it can irreversibly affect future generations of offspring with undoubtedly vast consequences, which is why there is widespread advocation to refrain from practicing it in humans\cite{dontedit}.
 
 \subsection{Genome Analysis}
 Necessary for the manipulation of genetic material is first understanding DNA, its function and effects of deviation from the norm, which this paper will focus primarily on.
 Fundamental understanding breaks down into two steps.
 Firstly DNA Sequencing, which means simply determining the sequence of DNA base pairs without interpretation. It enables the diagnosis of point mutations and similarity measurement, as well as forming the base for further analysis.
+
 Secondly gene association studies, which aim to map genetic variants to observable traits and come in two varieties. 
 Genome-wide association studies (GWAS) hope to uncover any correlation between strings of DNA and phenotype, while specific genetic association or gene linkage studies focus on specific variants of a gene (alleles) and examine whether they frequently cooccur with disease\cite{gwas}.
 This endeavour presents numerous challenges stemming from the sheer complexity of the mechanisms at hand.
-Part of the reason this differs from an exact science is changes an organisms environment has on its genome. It is estimated as much 98\% of human DNA is noncoding, id est lacks any apparent purpose\cite{noncoding}. Some of it however is not entirely disfunctional, rather it is dynamically activated and silenced in a process known as epigenetics changes\cite{epigenetics}.
-This means the exact same sequence of DNA can express itself differently, rendering direct conclusions about implications a specific gene has almost impossible.
+Part of the reason this differs from an exact science is changes an organisms environment has on its genome. It is estimated as much 98\% of human DNA is noncoding, id est lacks any apparent purpose\cite{noncoding}. Some of it however is not entirely disfunctional, rather it is dynamically activated and silenced in a process known as epigenetics changes by so called regulatory genes\cite{epigenetics}.
+This means the exact same sequence of DNA can express itself differently, making direct conclusions about the significance of a specific snippet fall short of reliability.
+In 2003 with the official completion of the Human Genome Project (HGP) this has been accomplished\cite{HGPFAQ}.
+The human genome consists of approximately 3.3 billion basepairs, by cross referencing a healthy genome, single point mutations can be effortlessly identified in theory, especially with modern high-throughput analysis tools\cite{rawal}.
+Unfortunately in the context of genetics this notion of a healthy genome is vague. Not only does a healthy genome not exist, simply averaging the genome of a few relatively healthy adults would do it no justice. Changes in DNA can also come in the form of deletion or addition of bases rendering traditional similarity metrics useless as an applicable method would have to be alignment free, in other words agnostic to the exact position in sequence, rather it should recognize subsequences or repetitions anywhere they show up and compare the frequency. Through the nature of mutation, the 'average genome' also varies widely regionally, the HGP in particular faced criticism for overrepresenting caucasian DNA, owed to the fact that it was conducted on anonymous donations of DNA in the USA\cite{HGPcritic}.
+It should therefore be seen more like a reference frame to possibly detect deviation.
+Cataloguing mutations is useful but by itself often provides little insight, as chances are the mutation occured a noncoding part.
+Even when mutation occurs in regulatory sequences or as part of a gene single mutations these usually have little effect.
+Its important to keep in mind that with mutations being so common, each cell has a slightly different sequence. The only mutations they share are those that occured in the germ cells that formed the zygote or in the very early stages afterwards.
+Germline mutations occur roughly $\frac{number of base pairs}{2}*10^{-9}$ times per year. In humans that works out to about 1.65 inheritable mutations per year per parent, but when examining the genome of adult humans there is sampling bias at play. Single point mutations with drastic changes usually just render the cells nonviable, consequently an egg being fertilized and developing long enough to be given birth to indicates a mostly intact genome\cite{scally}.
+Somatic mutations occur in the order of magnitute of $ 2*\frac{number of cell divisions}{10^8 base pairs}$, which with 30 trillion cells equates to roughly 500 trillion per year\cite{somaticmutation}.
+These usually have no or very little effect, are repaired by the cells dna repair mechanisms or kill the cell either by inhibiting vital function or by causing cell suicide\cite{dnarepair}.
+The unlikely unlikely case that DNA damage results in neither of these scenarios and the cell instead starts rapidly reproducing is what we call cancer.
 
-	\newpage
 
 \section{Who Are You}
 
 \subsection{DNA and Identity}
-"Identity" is a basic scientific concept in numerous disciplines, from psychology and pedagogy to sociology, ethnology, social and cultural anthropology, historical and literary studies to philosophy, and beyond that in many trans- and interdisciplinary debates, and has been for decades. Even if we do not ask ourselves who we are, we will receive unasked answers. Socialogist Abels describes identity as the answer to the question \textit{who am I} and therefore, identity as a differentiating term.\cite{abelsidentity} 
+\textit{Identity} is a concept in numerous disciplines, from psychology and pedagogy to sociology, ethnology, social and cultural anthropology, historical and literary studies to philosophy, and beyond that in many trans- and interdisciplinary debates, and has been for decades.
+The Oxford English Dictionary defines \textit{identity} as follows: "The sameness of a person or thing at all times or in all circumstances; the condition or fact that a person or thing is itself and not something else; individuality, personality"\cite{oxford}. So, how is DNA related to identity?  
 
-Market leader Ancestry states to have over 20 million people in their database and therefore the world’s largest consumer DNA network\cite{aboutancestry}. What do people hope to gain from their DNA tests and what does it have to do with our identity? A great example for DNA information leading to a new self-understanding are "I am P’s father" (based on a paternity test) or "I am an African-American with my roots in Nigeria" (based on genetic ancestry tracing). In this case, identity is not only a matter of a unique narrative identity but also of numerical identity, i.e., identity in terms of individual continuity-over-time.\cite{nordgren} 
+Every individual has a unique genetic makeup, their own distinct form of the human genome. 
+Furthermore, our DNA remains the same from the first instant of an individual’s existence to his or her last breath.\cite{dnaidentity} 
+Sociologist Abels describes identity as the answer to the question \textit{who am I} and therefore, identity as a differentiating term.\cite{abelsidentity} Consequently, it is not unjustified to combine both. On the one hand, there is a distinctive combination of DNA sequences that is individual for everyone and consistent for life. 
+On the other hand, there is a need for clarification about one's own identity, the will to differentiate oneself from others while remaining consistent within oneself. But, what do people hope to gain from their genetic test results? 
 
-In a study published in 2018, about 30\% of respondents said they had taken a genetic test to learn how their DNA influences their physical or emotional traits.\cite{canceropinion} 69 \% of Americans surveyed are very confident that there is a complex genetic code inside our cells that helps determine "who we are".\cite{apgfk} Apparently, the link between DNA results and information about one's own characteristics thus seems to have already reached some people. Whether the link was clear from the start or created through targeted marketing, it is probably a combination of both.
+According to Nordgren, new information can lead to a new self-understanding.\cite{nordgren} The results of genetic testing allow an insight into irrefutable truths, when executed correctly by qualified personnel. 
+In the case of a paternity test, a good example for this would be "I am P’s father". The statement is added as a new aspect of one's own perception and thus as part of one's own identity. Same procedure for the statement "I am an African-American with my roots in Nigeria", based on genetic ancestry tracing.
+
+In a study published in 2018, about 30\% of respondents said they had taken a genetic test to learn how their DNA influences their physical or emotional traits.\cite{canceropinion} 
+69 \% of Americans surveyed are very confident that there is a complex genetic code inside our cells that helps determine "who we are".\cite{apgfk} 
+Apparently, the link between DNA results and information about one's own characteristics thus seems to have already reached some people. Whether the link was clear from the start or created through targeted marketing, it is probably a combination of both.
 
 \subsection{Commercial Aspect of Identity}
+
+DNA tests are more popular than ever. Due to the decline in the cost of genetic analysis in the last two decades, "direct-to-consumer" genetic screening has become affordable for more and more people\cite{rodney}. 
+In 2018, the global direct-to-consumer market was valued at approximately 824.1 million USD and is estimated to grow to 6,364.5 million USD by 2028. 
+The rise in the public awareness along with the reduced cost and time required for sequencing owing to the technological advancements is responsible for bolstering the industry demand and aiding in reduction of the global healthcare expenditure.\cite{bisresearch} 
+
 \begin{quote}
 "Get insights from your DNA, whether it's your ethnicity or personal traits." (Ancestry.com)
 \end{quote}
-
-DNA tests are more popular than ever. Due to the decline in the cost of genetic analysis in the last two decades, "direct-to-consumer" genetic screening has become affordable for more and more people.\cite{rodney} In 2018, the global direct-to-consumer market was valued at approximately 824.1 million USD and is estimated to grow to 6,364.5 million USD by 2028. The rise in the public awareness along with the reduced cost and time required for sequencing owing to the technological advancements is responsible for bolstering the industry demand and aiding in reduction of the global healthcare expenditure.\cite{bisresearch} 
 
 \begin{quote}
 "Find out your likelihood of having certain characteristics. See how your DNA affects your hair color, taste preferences and more." (23andme.com)
 \end{quote}
 
-Many genetic testing companies appeal in their rhetoric to identity: The individualistic visions of identity is implicitly expressed in these quotations are clear examples of genetic individualism. Genetic individualism is the view that the DNA of an individual gives the individual a unique identity.\cite{nordgren} As mentioned in the chapter before, modern societies are searching for identity and this rhetoric is a response to that.\cite{nordgren} In addition to that, Nordgren and Juengst believe that the business models of these companies represent the confluence of three very different currents within contemporary Euro-American culture: the distinctly pre-modern search for a naturalistic understanding of individual identity in a pluralistic world, the thoroughly modern cachet of genomics as a science, and the post-modern emphasis on radical individual self-determination.
+Many genetic testing companies appeal in their rhetoric to identity. The previous quotes use words like "characteristics" and "personal traits" to manifest the connection between DNA testing and the customers identity. 
+Nordgreen describes this as genetic individualism which  is the view that the DNA of an individual gives the individual a unique identity\cite{nordgren}.
+This is in accordance with the statements from the previous chapter about DNA test results leading to a new self-understanding.
+Furthermore, Nordgren state that modern societies are searching for identity and this rhetoric is a response to that\cite{nordgren}.
+In addition to that, Nordgren and Juengst believe that the business models of these companies represent the confluence of three very different currents within contemporary Euro-American culture: the distinctly pre-modern search for a naturalistic understanding of individual identity in a pluralistic world, the thoroughly modern cachet of genomics as a science, and the post-modern emphasis on radical individual self-determination.\cite{nordgrenjuengst} The marketing methods of the websites partly explain the growing popularity of DNA tests, but what are the opportunities and risks? 
 
-Giving people knowledge of their genetic code, advocates of such services argue, can help them make better decisions about lifestyle, health, and medical care. But what happens to the sensitive data? The two biggest market players Ancestry and 23andMe have a combined DNA Database Size of 32+ million\cite{aboutancestry}\cite{about23andme}. 
+Giving people knowledge of their genetic code, advocates of such services argue, can help them make better decisions about lifestyle, health, and medical care. Also, many families have been reunited due to DNA testing. German television show "Julia Leischik sucht – Bitte melde dich" is an official partner of Ancestry\cite{ancestrywebsite}. In this Real-life documentary series are commissioned by relatives to find people who have not been seen for years, and sets out to find them as soon as she has enough information about the missing person. 
 
-Laestadius, Rich \& Auer investigated 30 different direct-to-consumer genetic testing websites for two aspects. The first aspect being transperency regarding confidentiality and privacy. As a second aspect, the use of data, professional and government bodies created guidelines to promote transparency among these companies was analysed. The authors concluded that although most companies met guidelines related to transparency regarding security protocols, storage procedures, and third-party disclosures, only few met guidelines regarding sharing risks from data disclosures. Additionally, few companies disclosed how long data would be kept for services or research. Use of data for research was frequently mentioned only in privacy policies and terms of service documents, and only two-thirds of companies required an additional consent to use consumer data for health-related research. This analysis shows that companies do not consistently meet international transparency guidelines related to confidentiality, privacy, and secondary use of data and are therefore a risk for their customers. The authors appeal to clearly inform consumers about specific third parties that will be given access to their data, whether they can have their samples and data deleted at will, and whether their data will be used for anything other than the services they purchased.\cite{companydata}
+The two biggest market players Ancestry and 23andMe have a combined DNA Database Size of 32+ million\cite{ancestrydatabase}\cite{about23andme}. With this amount of data and due to the sensitivity of the content, it should be handled very responsibly. But how does it look in practice?
+Laestadius, Rich \& Auer investigated 30 different direct-to-consumer genetic testing websites for two aspects. 
+The first aspect being transperency regarding confidentiality and privacy. As a second aspect, the use of data, professional and government bodies created guidelines to promote transparency among these companies was analysed. 
+The authors concluded that although most companies met guidelines related to transparency regarding security protocols, storage procedures, and third-party disclosures, only few met guidelines regarding sharing risks from data disclosures. 
+Additionally, few companies disclosed how long data would be kept for services or research. 
+Use of data for research was frequently mentioned only in privacy policies and terms of service documents, and only two-thirds of companies required an additional consent to use consumer data for health-related research. 
+This analysis shows that companies do not consistently meet international transparency guidelines related to confidentiality, privacy, and secondary use of data and are therefore a risk for their customers. 
+The authors appeal to clearly inform consumers about specific third parties that will be given access to their data, whether they can have their samples and data deleted at will, and whether their data will be used for anything other than the services they purchased.\cite{companydata}
 
+Another issue is the lack in diversity of the DNA Databases. Chow-White and Duster state that individuals of Asian and African ancestries are underrepresented as well as there are very few DNA samples from Latino and aboriginal peoples. 
+If the data is further used in research, as some genome websites allow in their terms and conditions, the production of knowledge about genome variation, medical conditions, and human health is biased. 
+This topic will be discussed in more detail in the following chapters.
 
-
-	\newpage
 
 \section{What Have You Done}
 
 \subsection{Forensics}
-Fingerprints, hair, salvia, and other fluids – the human body leaves traces everywhere. Therefore, its materiality has been a key part of criminal investigations throughout history. With the progression of forensic genetics in the last 35 years, many authors of crimes have been identified because of the ability to extract DNA profiles\cite{machado}. According to Interpol, 63 percent of the asked National Central Bureaus reported having a DNA database (a searchable repository) and they store over 10 million DNA profiles combined\cite{interpol}. Germanys Federal Criminal Police Office reports having had over 200,000 hits using DNA analysis in police investigations of crimes from 2000 to 2018\cite{bkastat}. 
+Fingerprints, hair, salvia, and other fluids – the human body leaves traces everywhere. Therefore, its materiality has been a key part of criminal investigations throughout history. 
+With the progression of forensic genetics in the last 35 years, many crime offenders have been identified because of the ability to extract DNA profiles\cite{machado}.
+ According to Interpol, 63 percent of the asked National Central Bureaus reported having a DNA database (a searchable repository) and they store over 10 million DNA profiles combined\cite{interpol}. 
+Germanys Federal Criminal Police Office reports having had over 200,000 hits using DNA analysis in police investigations of crimes from 2000 to 2018\cite{bkastat}. 
 
-The controversy around privacy versus surveillance applies to genome analysis as much as to any sensitive technology. Germanys BKA describes the evolution of the usage of DNA analysis as going from a supplement to the "classic" identification method of fingerprints to an equal and self-evident means of securing evidence\cite{bkapres}. A common claim of advocates for DNA collection is that there is no difference between DNA and fingerprinting in terms of its invasion of an individual's privacy. But while fingerprints are a unique identifier, DNA identifies networks of people.\cite{cwduster} DNA data can reveal information about third parties that they have not consented to. In the case of the Golden state killer, Criminal DNA databases produced no hits but a match to a distant relative on a genealogy website has led to the identity and therefore the arrest of the perpetrator\cite{goldenstate}. In this incident, the misuse of DNA profiles on genealogy websites has led to the prevention of further crimes and therefore has added value for society.
+The controversy around privacy versus surveillance applies to genome analysis as much as to any sensitive technology. 
+Germanys BKA describes the evolution of the usage of DNA analysis as going from a supplement to the "classic" identification method of fingerprints to an equal and self-evident means of securing evidence\cite{bkapres}. 
+A common claim of advocates for DNA collection is that there is no difference between DNA and fingerprinting in terms of its invasion of an individual's privacy. 
+But while fingerprints are a unique identifier, DNA identifies networks of people.\cite{cwduster} DNA data can reveal information about third parties that they have not consented to.
+ In the case of the Golden state killer, Criminal DNA databases produced no hits but a match to a distant relative on a genealogy website has led to the identity and therefore the arrest of the perpetrator\cite{goldenstate}. 
+In this incident, the misuse of DNA profiles on genealogy websites has led to the prevention of further crimes and therefore has added value for society.
 
-Nevertheless, DNA should not be tracked and used lightly. However, statistics from the German Federal Criminal Police Office show that in addition to theft or murder, insults have also led to hits in DNA analysis\cite{bkastat}. What kind of cases make it legitimate to order a genome analysis after an insult is not explained – but the DNA profiles remain in the forensic database. In 2008, the European Court of Human Rights ruled that a retention regime that permits the indefinite retention of DNA records of both convicted and non-convicted (“innocent”) individuals is disproportionate\cite{smarpervsuk}. As a consequence, the Protection of Freedoms Act 2012 was implemented to permit the indefinite retention of DNA profiles of most convicted individuals and temporal retention for some first-time convicted minors and innocent individuals on the National DNA Database\cite{protectionoffreedomsact}. ??? MÖGLICHKEITEN ÜBER LÖSCHUNG DER DATEN IN ANDEREN LÄNDERN HERAUSSUCHEN ???
+DNA should clearly not be tracked and used carelessly, however statistics from the German Federal Criminal Police Office show that in addition to theft or murder, cases of verbal abuse have also led to hits in DNA analysis\cite{bkastat}. 
+What kind of cases make it legitimate to order a genome analysis after an insult is not explained – but the DNA profiles remain in the forensic database. In 2008, the European Court of Human Rights ruled that a retention regime that permits the indefinite retention of DNA records of both convicted and non-convicted (“innocent”) individuals is disproportionate\cite{smarpervsuk}. 
+As a consequence, the Protection of Freedoms Act 2012 was implemented to permit the indefinite retention of DNA profiles of most convicted individuals and temporal retention for some first-time convicted minors and innocent individuals on the National DNA Database\cite{protectionoffreedomsact}. 
+It is not yet certain whether other countries will follow suit with this data protection directive.
 
 \subsection{Paternity}
 After testing for genetic relatedness, non-legal and legal paternity tests are offered most often by direct-to-consumer genetic companies.\cite{dnastatista}
-
-	\newpage
-
+Genetic tests can be helpful in establishing evidence for the parenthood of a person for a case like child custody and support. 
+The results of genetic test can also be used as a support for placing a parent’s name on the birth certificate of a child or for settling disputes in child custody laws. However, whether the sampling is done with the consent of all parties tested is not the responsibility of the genetic websites.
 
 \section{What Does Your Future Look Like}
 
 \subsection{Medical Sector}
-As preventing disease is usually preferable over treating it, a substantial amount of medicine focuses on early detection and prevention. Especially for the class of mendelian disorders, which are characterized by being linkable to a single gene defect, genetic testing has proven to make diagnosis easy and reliable \textbf{[citation needed]}.
-However while a grand number of such diseases exist, they are usually rare so testing might only pay off if the defect is known to run in the family \textbf{[citation needed]}.
-Much bigger potential lies in preventing common disease with either a genetic component or whose causes are spread over several genes and are therefore much harder to pinpoint. This uncertainty neccessarily introduces stochastics and the method known as genetic risk assessment \textbf{[citation needed]}.
+As preventing disease is usually preferable over treating it, a substantial amount of medicine focuses on early detection and prevention. Especially for the class of mendelian disorders, which are characterized by being linkable to a single gene defect, genetic testing has proven to make diagnosis easy and reliable \cite{rawal}.
+However while a grand number of such diseases exist, they are usually rare so testing might only pay off if the defect is known to run in the family \cite{publicopinion}.
+Much bigger potential lies in preventing common disease with either a genetic component or whose causes are spread over several genes and are therefore  harder to pinpoint. This uncertainty neccessarily introduces stochastics and the method known as genetic risk assessment \cite{gwas}.
 Advances here have sprouted the field of pharmagenomics, which utilizes genetic information to practice precision medicine.
 Just like ethnicity, genetic profile has been shown to affect drug response, thus using this knowledge to personalize prescriptions can increase effectiveness and lower cost and side effects \cite{costsaving}.
-Predictive genetic testing does not come without concerns from both experts and the public.
-Most prominent are patient autonomy and informed consent,genetic discrimation, commercial use, use of public resources towards genetic testing and research, patient responsibilities towards close relatives and psychological risks associated with carrying near certain information about the future\cite{publicopinion}.
+Predictive genetic testing does not come without concerns from both experts and the public, the most prominent ones will be discussed in the following:
 
+\subsubsection{Patient Autonomy}
+The primary role of any new medical instrument should be to serve, therefore patient autonomy and informed consent are non negotiable, which neccessitates public education.
+Broad, as well as targeted at populations most susceptible to specific genetic conditions.
+Equally as important is access to testing facilities themselves as well as short wait times for both test and treatment\cite{publicopinion}.
+\subsubsection{Genetic Discrimation}
+As will be discussed in the following chapter, subpar treatment grounded in genome analysis results is no better than discrimination on the basis of sex, race, age or religion.
+\subsubsection{Commercial Use}
+Profit as the primary incentive manages to corrupt even the most honourable endeavour.
+Commercial gene testing and therapy raises the same questions about motive and ethical obligation to help that plagued the medical ethics for millenia.
+Testing costs being inflated because of patents can hardly be in accordance with public interest, which sparks discussion about the next point\cite{publicopinion}.
+\subsubsection{Use of Public Resources}
+If private patents are to be avoided, public resources have to be used towards research in the applicable area.
+Distributing those in a fair way however proves difficult. Developing tests is expensive so some conditions need to be prioritized, which in turn requires weighing of different factors. The initial cost of development is just as important as benefit it brings. This is comprised of the reliability of the result, as well as therapy options versus their respective cost. An unreliable result is equally useless from a public health perspective as knowledge about a genetic death sentence.
+Additionally as many tests would only ever affect a small number of people, some argue that the money should either be used for more general genetic tests or towards programs that target public health in a broader sense like adressing diet\cite{publicopinion}.
+\subsubsection{Patient Responsibilities}
+While a general right to data privacy in medicine makes sense for traditional diagnostics, one might argue that since DNA test results have immediate consequences for relatives theres at least in part a responsibility to inform said relatives of any risks they themselves might face, comparable to infectious disease or STDs\cite{publicopinion}.
+This apparent obligation to warn stands in direct conflict with the testers pledge of silence and the testees right to privacy, a conflict that could in theory be resolved with institutions for anonymous testing and subsequent information of concerned parties analogous to HIV testing.
+\subsubsection{Psychological Risks}
+The psychological weight associated with carrying near certain information about the future is not to be underestimated in the context of genetic testing either.
+Just as a cancer diagnosis, discovering to be at high risk of devoloping potentially lethal disease can be devastating, especially if treatment options are limited\cite{publicopinion}.
+Depending on the evolution of public debate on the topic, a scenario in which gene therapy is frowned upon in a similar manner to termination of pregnancy by groups within society is also imaginable.
+This would add additional stress and force people at risk for genetic disease to make a choice between social acceptability and their own health.
 
 
 \subsection{Insurance}
 Insurance as a business walks a fine line between solidarity and preying on the vulnerable. Risk and how we manage it as a society is studied under the name of insurance ethics, but to date the literature is sparse.
 While public insurance in practice is a form of wealth redistribution, private insurance is in essence paying for peace of mind\cite{insuranceethics}.
+Looking at the probability theory behind it, we expect to pay more than the 
 However this social safety net only functions as long as there is uncertainty, in fact it functions better the more uncertainty there is.
 This becomes obvious in consideration of the idea that clarity about the future replaces the insurance sector.
-In a fully deterministic world, omniscient private insurance companies would never lose money on a customer, as premiums could be precisely the cost said customer will produce over their contract, plus a small markup; in other words, not providing any insurance.
+In a fully deterministic world, omniscient private insurance companies would never lose money on a customer, as premiums could be precisely the cost said customer will produce over their contract, plus a small markup; in other words, not providing any insurance, except possibly against inflation.
 Keeping this in mind it seems logical that it's in the best interest of society at large to keep insurance companies mostly in the dark.
-At least in the case of health insurance, this darkness is threatened by introducing genetesting aided risk analysis.
-The inclusion of factors like genetic predisposition to disease in risk analysis is an incredibly helpful tool to doctors when choosing appropriate treatment and precautions, but becomes detrimental when accessed by insurance companies\cite{insurancegenes}.
+At least in the case of health insurance, this darkness is threatened by introducing gene testing aided risk analysis.
+The inclusion of factors like genetic predisposition to disease in risk analysis is an incredibly helpful tool to doctors when choosing appropriate treatment and taking precautions, but becomes detrimental when accessed by insurance companies\cite{insurancegenes}.
 Legal action to protect against this threat is already being taken, with the USA introducing the Genetic Information Nondiscrimination Act in 2008\cite{insurancegenes}.
-It is vital to human development that we retain trust in and refine the methodology of genetic testing, while at the same time making sure the sensitive informations is kept discretely and genetic discrimination is kept under control.
-
-
-	\newpage
+It is imperative that sensitive data continues to be stored discretely access is tightly controlled as to not enable exploitation of this knowledge.
+Were genetic discrimination to become a common occurence, would it be likely that the tradeoff for a chance at a healthier life would no longer be worth it to certain people, which would lead to unneccessary and preventable suffering.
+It is therefore vital that we retain trust in and refine the methodology of genetic testing, while at the same time making sure the sensitive informations is stored discretely and genetic discrimination is kept under control.
 
 \section{Consequences for Society: Social Compatibility}
 
@@ -172,22 +238,28 @@ A well reflected perspective enforces the insight that our social, political and
 Eradicating hereditary disease and disability in a nonviolent way is a seemingly obvious step towards a world with less suffering.
 Examining this from a moral standpoint one cannot overlook the strong parallels to the nonidentity problem, which describes the question whether preventing a flawed existence filled with suffering and to replace it with a less flawed and nonidentical one is desirable from a moral point of view\cite{nonidentity}.
 
-Additionally there are numerous short term consequences. Preventing some but not all disease would result in amplification of marginalization, possibly increasing existing discrimination. \newline
-The idea that disability is inherently wrong and needs to be fixed in itself is a questionable statement at best and strongly inhumane at worst\cite{schreiber}.
+Additionally there are numerous short term consequences. Preventing some but not all disease would result in amplification of marginalization, possibly increasing existing discrimination.
+The idea that disability is inherently wrong and needs to be fixed in itself is a questionable statement at best and strongly inhumane at worst, since it is deeply dehumanizing to talk about a disability problem in our society.
+Yet this progression towards active filtering on which existence is allowed to happen is hardly avertable.
+Outlawing prenatal diagnostics would only result in more late term miscarriages, suffering that could clearly have been minimized. No individual may be forced to carry a disabled fetus against their will either as their autonomy has to be respected just as much as the fetuses\cite{schreiber}.
+This dilemma is not one that can simply be solved with legislature or technological advancements, rather it has to be approached from a standpoint of compassion.
 
-Assuming policies would be enacted on a national level instead of as a global initiative, practicing eugenics via genetic manipulation would deepen the divide between developed and developing nations causing additional inequality, alongside the social inequality unavoidibly caused by liberal eugenics, the approach of leaving the use of enhancements to choice.\newline
+Assuming policies would be enacted on a national level instead of as a global initiative, practicing eugenics via genetic manipulation would deepen the divide between developed and developing nations causing additional inequality, alongside the social inequality unavoidibly caused by liberal eugenics, the approach of leaving the use of enhancements to choice.
 The opposite, obligatory genetic enhancement, would unearth even bigger concerns regarding bodily and reproductive autonomy\cite{eugenics}.
 
 Artificially narrowing the human genepool might also have unforeseen sideeffects. As diversity is one of the driving agents of natural selection, careless intervention could inhibit our natural ability to defend against novel threats and disease\cite{mayr}.
-It might quite literally be the end of evolution and the start of a new biological era. \newline
+It might quite literally be the end of evolution and the start of a new biological era.
 There are also outcries from a religious perspective arguing that taking responsibility away from god is divinely forbidden\cite{eugenics}.
 
 All of these have to be weighed against the possible good that genetic enhancement might bring and making a definitive recommendation free of moral ambiguity is most likely impossible.
+It quickly becomes a discussion about what it is we as a society are trying to accomplish. For minimizing future suffering overall eugenics might be the obvious choice.
+On the other hand a statement about maximizing joy cannot be made as easily. While healthier lives are certainly desirable, it would quickly become the status quo and no longer something to be grateful for.
+With standards rising it could be equally difficult to fit in so theres no reason to believe a genetically enhanced society would constantly be ecstatic about its accomplishments.
+Futhermore most of the prior arguments assume total confidence in the human ability to manipulate genes, which quite frankly is far from being warranted.
+Theres good reason most of the biological world has agreed to put experimentation in humans on hold\cite{dontedit}.
 
 
  \section{Conclusion}
-
-	\newpage
 
 \pagenumbering{gobble}
 \begin{thebibliography}{99}
@@ -197,6 +269,12 @@ All of these have to be weighed against the possible good that genetic enhanceme
 
 \bibitem{mendel} Gregor Mendel,
 \textbf{Versuche über Pflanzenhybriden} (Read at the meetings of February 8th, and March 8th, 1865)
+
+\bibitem{dnaprimer} Vadim. V. Demidov
+\textbf{DNA Beyond Genes} (Springer Cham, 2020)
+
+\bibitem{codon}
+\textbf{Codon} (https://rosalind.info/glossary/codon/)
 
 \bibitem{mutationbreeding} Joanna Jankowicz-Cieslak, Thomas H. Tai, Jochen Kumlehn, Bradley J. Till
 \textbf{Biotechnologies for Plant Mutation Breeding} (Springer Cham, 2017)
@@ -210,8 +288,11 @@ All of these have to be weighed against the possible good that genetic enhanceme
 \bibitem{avery_macleod_mccarty} Oswald Avery, Colin MacLeod, Maclyn McCarty,
 \textbf{Induction of Transformation by a Desoxyribonucleic Acid Fraction isolated from Pneumococcus type III} (Journal of Experimental Medicine, 1944)
 
-\bibitem{gwas} 
-\textbf{GWA (genome-wide association, GWAS)} (Springer Dordrecht, 2008)
+\bibitem{HGPFAQ}
+\textbf{Human Genome Project FAQ} (https://www.genome.gov/human-genome-project/Completion-FAQ)
+
+\bibitem{HGPcritic} Raymond E. Spier,
+\textbf{The Human Genome Project Under the Microscope} (Science and Engineering Ethics, 1998)
 
 \bibitem{noncoding} F. Costa,
 \textbf{Non-coding RNAs, Epigenomics, and Complexity in Human Cells} (Caister Academic Press, 2012)
@@ -219,14 +300,109 @@ All of these have to be weighed against the possible good that genetic enhanceme
 \bibitem{epigenetics} Alexander Meissner, Jörn Walter,
 \textbf{Epigentic Mechanism in Cellular Reprogramming} (Springer Berlin-Heidelberg, 2015)
 
-\bibitem{schreiber} Hans-Peter Schreiber,
-\textbf{Gentechnik, Genomanalyse und Ethik} (\textit{Ethik Med \textbf{10}}, 1998)
+\bibitem{kumar} Sachil Kumar, 
+\textbf{Forensic DNA Typing: Principles, Applications and Advancements} (Springer Singapore, 2020)
+
+\bibitem{scally} A. Scally,
+\textbf{The mutation rate in human evolution and demographic inference} (Elsevier BV, 2016)
+
+\bibitem{somaticmutation} Satoshi Oota,
+\textbf{Somatic mutations – Evolution within the individual} (ScienceDirect, 2019)
+
+\bibitem{dnarepair} H. Lodish, A. Berk, P. Matsudaira, C.A. Kaiser, M. Krieger, M.P. Scott, S.L. Zipursky, J. Darnell 
+\textbf{Molecular Biology of the Cell} (New York WH Freeman, 2004)
+
+\bibitem{oxford} Oxford University Press 1989
+\textbf{Oxford English Dictionary}, second edition (1989)
+https://www.oed.com/oed2/00111224
+
+\bibitem{dnaidentity} Raymond Keogh,
+\textbf{DNA \& The Identity Crisis} (2009)
+https://philosophynow.org/issues/133/DNA\_and\_The\_Identity\_Crisis
+
+\bibitem{abelsidentity} Heiz Abels,
+\textbf{Identität} (July 15th, 2010)
+https://books.google.de/books?hl=de\&lr=\&id=Z0z4y6WUZLgC\&oi=fnd\&pg=PA13\&dq=identit\%C3\%A4t\&ots=wmnh96n2l2\&sig=FME9rlt1rE9DFFGSZz60R\_F5e-M\&redir\_esc=y\#v=onepage\&q=identit\%C3\%A4t\&f=false
+
+\bibitem{nordgren} Anders Nordgren,
+\textbf{The rhetoric appeal to identity on websites of companies offering non-health-related DNA testing} (August 24th, 2010)
+https://link.springer.com/article/10.1007/s12394-010-0072-9
+
+\bibitem{ancestrywebsite} Ancestry,
+\textbf{German homepage}
+https://www.ancestry.de/. Retrieved May 31th, 2022
+
+\bibitem{canceropinion} Harris Insights \& Analytics LLC, A Stagwell Company
+\textbf{ASCO 2018 Cancer Opinions Survey} (October, 2018)
+https://www.asco.org/sites/new-www.asco.org/files/content-files/research-and-progress/documents/2018-NCOS-Results.pdf
+
+\bibitem{apgfk} GfK Public Affairs \& Corporate Communications
+\textbf{THE AP-GfK POLL, A survey of the American general population (ages 18+)} (March, 2014)
+http://surveys.associatedpress.com/data/GfK/AP-GfK\%20March\%202014\%20Poll\%20Topline\%20\%20Final\_SCIENCE.pdf
+
+\bibitem{rodney} Rodney Jones
+\textbf{Genetics just got personal : Personal genomics as social interaction} (2012)
+https://scholars.cityu.edu.hk/en/publications/publication(da4917d6-d472-4591-aa18-5409048c46d0).html
+
+\bibitem{bisresearch} BIS Research,
+\textbf{Global Direct-to-Consumer Genetic Testing (DTC-GT) Market} (May, 2019)
+https://www.researchandmarkets.com/reports/4771288/global-direct-to-consumer-genetic-testing-dtc. Retrieved May 22th, 2022
+
+\bibitem{about23andme} 23andMe Inc
+\textbf{Company Facts}
+https://www.23andme.com/about/. Retrieved May, 27th, 2022
+
+\bibitem{companydata} Laestadius, L., Rich, J. \& Auer, P
+\textbf{All your data (effectively) belong to us: data practices among direct-to-consumer genetic testing firms} (September 22th, 2016)
+https://www.nature.com/articles/gim2016136\#citeas
+
+\bibitem{machado} Helena Machado, Rafaela Granja, 
+\textbf{Forensic Genetics in the Governance of Crime} (Springer 2020)
+
+\bibitem{interpol} Interpol,
+\textbf{Global DNA Profiling Survey Results} (2019)
+
+\bibitem{bkastat} Bundeskriminalamt, preserved by statista,
+\textbf{Anzahl der Treffer mittels der DNA-Analyse bei der polizeilichen Aufklärung von Straftaten nach Deliktsbereichen von 2000 bis 2018} (March 2018) 
+https://de.statista.com/statistik/daten/studie/155755/umfrage/polizeiliche-aufklaerung-von-straftaten-ueber-die-dna-analyse-nach-deliktsbereichen/\#professional
+
+\bibitem{bkapres} Presse-mitteilung des Bundeskriminalamtes ,
+\textbf{20 Jahre DNA-Analyse-Datei} (16.04.2018)
+
+\bibitem{cwduster} Peter A. Chow-White, Troy Duster,
+\textbf{Do Health and Forensic DNA Databases Increase Racial Disparities?} (Plos Medicince 2011)
+
+\bibitem{goldenstate} Justin Jouvenal,
+\textbf{To find alleged Golden State Killer, investigators first found his great-great-great-grandparents} (April 30th, 2018) https://www.washingtonpost.com/local/public-safety/to-find-alleged-golden-state-killer-investigators-first-found-his-great-great-great-grandparents/2018/04/30/3c865fe7-dfcc-4a0e-b6b2-0bec548d501f\_story.html?noredirect=on. Retrieved May 15th, 2022
+
+\bibitem{smarpervsuk} European Court of Human Rights,
+\textbf{CASE OF S. AND MARPER v. THE UNITED KINGDOM} (December 4th, 2008)
+http://www.bailii.org/eu/cases/ECHR/2008/1581.html
+
+\bibitem{protectionoffreedomsact} Aaron Opoku Amankwaa, Carole McCartney,
+\textbf{The UK National DNA Database: Implementation of the Protection of Freedoms Act 2012} (March, 2018)
+https://www.sciencedirect.com/science/article/abs/pii/S0379073817305571?via \%3Dihub
+
+\bibitem{dnastatista} Statista,
+\textbf{Number of companies providing direct-to-consumer (DTC) genetic testing worldwide as of 2016, by category} (March, 2016)
+https://www.statista.com/statistics/791985/number-of-companies-providing-dtc-genetic-testing-by-category-worldwide/
+
+\bibitem{kpmg} Lauren Friend, Jessica O’Neill, Adrienne Rivlin, Robert Browne,
+\textbf{Direct-to-consumer genetic testing} Opportunities and risks in a rapidly evolving market (KPMG 2018) https://assets.kpmg/content/dam/kpmg/xx/pdf/2018/08/direct-to-consumer-genetic-testing.pdf
 
 \bibitem{rawal} Leena Rawal,  \& Sher Ali, 
 \textbf{Genome Analysis and Human Health} (Springer Singapore, 2017)
 
-\bibitem{kumar} Sachil Kumar, 
-\textbf{Forensic DNA Typing: Principles, Applications and Advancements} (Springer Singapore, 2020)
+\bibitem{gwas} 
+\textbf{GWA (genome-wide association, GWAS)} (Springer Dordrecht, 2008)
+
+\bibitem{ancestrydatabase} Ancestry,
+\textbf{Company Facts}
+https://www.ancestry.com/corporate/about-ancestry/company-facts. Retrieved May 22th, 2022
+
+\bibitem{nordgrenjuengst} Anders Nordgren, E.T. Juengst,
+\textbf{Can genomics tell me who I am? Essentialistic rhetoric in direct-to-consumer DNA testing} (May 28th, 2009)
+https://www.tandfonline.com/doi/citedby/10.1080/14636770902901595?scroll=top\&needAccess=true
 
 \bibitem{publicopinion} Douglas Martin, Heather Greenwood, Jeff Nisker,
 \textbf{Public Perception of Ethical Issues Regarding Adult Predictive Genetic Testing} (Health Care Anal, 2010)
@@ -240,85 +416,18 @@ All of these have to be weighed against the possible good that genetic enhanceme
 \bibitem{insurancegenes} Michelle Lane, Ida Ngueng Feze \& Yann Joly,
 \textbf{Genetics and Personal Insurance: the Perspectives of Canadian Cancer Genetic Counselors} (Journal of Genetic Counseling, 2015)
 
+\bibitem{schreiber} Hans-Peter Schreiber,
+\textbf{Gentechnik, Genomanalyse und Ethik} (\textit{Ethik Med \textbf{10}}, 1998)
+
+
 \bibitem{eugenics} Sara Goering,
 \textbf{Eugenics} (Stanford Encyclopedia of Philosophy, 2014)
 
 \bibitem{nonidentity} Melinda Roberts,
 \textbf{The Nonidentity Problem} (Stanford Encyclopedia of Philosophy, 2009)
 
-\bibitem{machado} Helena Machado, Rafaela Granja, 
-\textbf{Forensic Genetics in the Governance of Crime} (Springer 2020)
 
-\bibitem{interpol} Interpol,
-\textbf{Global DNA Profiling Survey Results} (2019)
 
-\bibitem{bkapres} Presse-mitteilung des Bundeskriminalamtes ,
-\textbf{20 Jahre DNA-Analyse-Datei} (16.04.2018)
-
-\bibitem{cwduster} Peter A. Chow-White, Troy Duster,
-\textbf{Do Health and Forensic DNA Databases Increase Racial Disparities?} (Plos Medicince 2011)
-
-\bibitem{goldenstate} Justin Jouvenal,
-\textbf{To find alleged Golden State Killer, investigators first found his great-great-great-grandparents} (April 30th, 2018) https://www.washingtonpost.com/local/public-safety/to-find-alleged-golden-state-killer-investigators-first-found-his-great-great-great-grandparents/2018/04/30/3c865fe7-dfcc-4a0e-b6b2-0bec548d501f\_story.html?noredirect=on. Retrieved May 15th, 2022
-
-\bibitem{kpmg} Lauren Friend, Jessica O’Neill, Adrienne Rivlin, Robert Browne,
-\textbf{Direct-to-consumer genetic testing} Opportunities and risks in a rapidly evolving market (KPMG 2018) https://assets.kpmg/content/dam/kpmg/xx/pdf/2018/08/direct-to-consumer-genetic-testing.pdf
-
-\bibitem{bkastat} Bundeskriminalamt, preserved by statista,
-\textbf{Anzahl der Treffer mittels der DNA-Analyse bei der polizeilichen Aufklärung von Straftaten nach Deliktsbereichen von 2000 bis 2018} (March 2018) 
-https://de.statista.com/statistik/daten/studie/155755/umfrage/polizeiliche-aufklaerung-von-straftaten-ueber-die-dna-analyse-nach-deliktsbereichen/\#professional
-
-\bibitem{smarpervsuk} European Court of Human Rights,
-\textbf{CASE OF S. AND MARPER v. THE UNITED KINGDOM} (December 4th, 2008)
-http://www.bailii.org/eu/cases/ECHR/2008/1581.html
-
-\bibitem{protectionoffreedomsact} Aaron Opoku Amankwaa, Carole McCartney,
-\textbf{The UK National DNA Database: Implementation of the Protection of Freedoms Act 2012} (March, 2018)
-https://www.sciencedirect.com/science/article/abs/pii/S0379073817305571?via \%3Dihub
-
-\bibitem{bisresearch} BIS Research,
-\textbf{Global Direct-to-Consumer Genetic Testing (DTC-GT) Market} (May, 2019)
-https://www.researchandmarkets.com/reports/4771288/global-direct-to-consumer-genetic-testing-dtc. Retrieved May 22th, 2022
-
-\bibitem{ancestrydatabase} Ancestry,
-\textbf{Company Facts}
-https://www.ancestry.com/corporate/about-ancestry/company-facts. Retrieved May 22th, 2022
-
-\bibitem{nordgren} Anders Nordgren,
-\textbf{The rhetoric appeal to identity on websites of companies offering non-health-related DNA testing} (August 24th, 2010)
-https://link.springer.com/article/10.1007/s12394-010-0072-9
-
-\bibitem{nordgrenjuengst} Anders Nordgren, E.T. Juengst,
-\textbf{Can genomics tell me who I am? Essentialistic rhetoric in direct-to-consumer DNA testing} (May 28th, 2009)
-https://www.tandfonline.com/doi/citedby/10.1080/14636770902901595?scroll=top\&needAccess=true
-
-\bibitem{about23andme} 23andMe Inc
-\textbf{Company Facts}
-https://www.23andme.com/about/. Retrieved May, 27th, 2022
-
-\bibitem{rodney} Rodney Jones
-\textbf{Genetics just got personal : Personal genomics as social interaction} (2012)
-https://scholars.cityu.edu.hk/en/publications/publication(da4917d6-d472-4591-aa18-5409048c46d0).html
-
-\bibitem{canceropinion} Harris Insights \& Analytics LLC, A Stagwell Company
-\textbf{ASCO 2018 Cancer Opinions Survey} (October, 2018)
-https://www.asco.org/sites/new-www.asco.org/files/content-files/research-and-progress/documents/2018-NCOS-Results.pdf
-
-\bibitem{apgfk} GfK Public Affairs \& Corporate Communications
-\textbf{THE AP-GfK POLL, A survey of the American general population (ages 18+)} (March, 2014)
-http://surveys.associatedpress.com/data/GfK/AP-GfK\%20March\%202014\%20Poll\%20Topline\%20\%20Final\_SCIENCE.pdf
-
-\bibitem{companydata} Laestadius, L., Rich, J. \& Auer, P
-\textbf{All your data (effectively) belong to us: data practices among direct-to-consumer genetic testing firms} (September 22th, 2016)
-https://www.nature.com/articles/gim2016136\#citeas
-
-\bibitem{dnastatista} Statista,
-\textbf{Number of companies providing direct-to-consumer (DTC) genetic testing worldwide as of 2016, by category} (March, 2016)
-https://www.statista.com/statistics/791985/number-of-companies-providing-dtc-genetic-testing-by-category-worldwide/
-
-\bibitem{abelsidentity} Heiz Abels,
-\textbf{Identität} (July 15th, 2010)
-https://books.google.de/books?hl=de\&lr=\&id=Z0z4y6WUZLgC\&oi=fnd\&pg=PA13\&dq=identit\%C3\%A4t\&ots=wmnh96n2l2\&sig=FME9rlt1rE9DFFGSZz60R\_F5e-M\&redir\_esc=y\#v=onepage\&q=identit\%C3\%A4t\&f=false
 
 \end{thebibliography}
 

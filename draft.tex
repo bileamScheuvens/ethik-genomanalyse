@@ -20,7 +20,7 @@
 \begin{document}
 \pagenumbering{gobble}
 
-\title{Weighing Chances and Use Against Risks and Misuse of Emerging Genome Analysis and Manipulation Technology}
+\title{On the Social Compatibility of Genome Analysis}
 
 \author{\IEEEauthorblockN{1\textsuperscript{st} Benedict Bileam Scheuvens}
 \IEEEauthorblockA{\textit{Data Science} \\
@@ -46,14 +46,12 @@ This paper aims to explore aspects of how applied genetics will impact us in reg
 Since great responsibility comes with great power, Genetic engineering is as much blessing as curse and must be used with caution, while genome analysis unveils a tremendous amount of information not just about us, but about our relatives as well and enables more and more accurate predictions about the future.
 This paper summarises the chances and risks of genome analysis broken down in three fundamental questions. \textit{Who are you} focuses on the individual consumer of DNA tests, what is expected to gain from the results and why it is growing in popularity. \textit{What have you done} takes a look at the past of an individual and what information can be tracked by DNA. \textit{What does your future look like} aims at the consequences this information can have.
 \end{abstract}
-\section{Historical and Technical Introduction}
+\section{Introduction}
 
-\subsection{Discovery of Genes}
 While initial speculation about genetics dates back to Hippocrates and Aristotle, who developed theories to explain inheritance\cite{mayr}, it was not until 1856 when Gregor Mendel experimented with cross breeding numerous pea plants to discover patterns in attribute inheritance\cite{mendel}, not knowing his actions would plant a seed within biology that would soon bloom to disrupt areas of daily life far beyond the bounds of academic science.
-The groundbreaking discovery he made was that the activate traits (phenotype) of a given plant is not a mere blend of the visible attributes its parents held, but rather a seemingly random combination of the genetic lineage, meaning even attributes last observed several generations ago could be present\cite{mendel}.
+The groundbreaking discovery he made was that the observable traits (phenotype \footnote{Additionally epiphenotypic traits are characteristics that have become observable with the emergence of technology, like the size of ones liver}) of a given plant is not a mere blend of the visible attributes its parents held, but rather a seemingly random combination of the genetic lineage, meaning even attributes last observed several generations ago could be present\cite{mendel}.
 Mendels work lead to a deeper understanding of the underlying mechanisms of inheritance, dominant and recessive genes (strings of DNA that are translated into a different product) and was fundamental to the development of the techniques discussed in this paper.
 
-\subsection{Structure of DNA}
 To aid a discussion a short primer on what DNA actually is, may be appropriate, the well initiated reader may skip this section.
 DNA is an acidic molecule present in every complex organism, which encodes the cell function. In its natural form it takes the shape of a double helix. The outer rails, called backbones are made up of phosphate and a pentose sugar called deoxyribose. Each ladder step connecting the backbones is a pair of nitrogenous bases, also called nucleobases. These bases come in the form of chemical compounds called purine (adenine-A \& guanine-G) and pyrimidines (cytosine-C \& thymine-T) which are connected via hydrogen bond.
 These bases form are complementary, meaning a purine always bonds with the corresponding pyrimidine to form the base pairs GC and AT.
@@ -62,22 +60,24 @@ Within a cell DNA may be read and transcribed into RNA, a similar but single str
 Except for the start and three stop codons (AUG, UAA, UAG and UGA respectively), which guide where to start and stop translation, each codon codes for one of twenty amino acids\cite{codon}.
 To get an idea of the factors involved in this procedure, the exact enzymes which break apart, or process DNA and its derivates are irrelevant. It is simply important to understand that every protein that makes up life is created from amino acids, the why, when, how, how much and what of which is encodable in the order of short snippets of bases that lie between start and stop codons.
 
-\subsection{Genetic Engineering}
-Human interference in evolution to bend nature to our will goes back at least to 2000 B.C. with strong evidence that the Assyrians artificially pollinated date trees\cite[p.633]{mayr}.
-Since then, several methods with the shared goal of reinforcing desirable characteristics and eradicating undesirables ones developed, most dominantly selective breeding, with the recent modification called mutation breeding, the practice of directly exposing organisms, usually seeds, to mutagenic material to positively augment the mutation rate and such the chance of new positive traits being present\cite{mutationbreeding}.
-It can be argued that since selective and mutation breeding only ever affect coming generations it can hardly be seen as genetic modification of a single organism and is better labeled as a separate method of eugenics.
-From that perspective the first milestone of genetic engineering was the Avery–MacLeod–McCarty experiment in 1944, which proved that DNA was responsible for transformation in virus strains. It built upon Griffith's experiment from 1928, which showed that potent but dead virus strains can still transfer their properties to usually harmless strains, via something called the "transforming principle".
-Avery, MacLeod and McCarty proved that the relevant component for this to work was DNA and not like previously assumed specific proteins, since the phenomenon persist when the solution is treated with protein dissolving substance, but seizes to persist when treated with DNA dissolving agents.
+Human interference in evolution to bend nature to our will goes back at least to 2000 B.C. with strong evidence that the Assyrians artificially pollinated date trees\cite{mayr}.
+Since then, several methods with the shared goal of reinforcing desirable characteristics and eradicating undesirables ones developed, most dominantly selective breeding, with the recent modification called mutation breeding, the practice of directly exposing organisms, usually seeds, to mutagenic material to positively augment the mutation rate and thus the chance of new positive traits being present\cite{mutationbreeding}.
+
+The first milestone of single organism genetic engineering was the Avery–MacLeod–McCarty experiment in 1944, which proved that DNA was responsible for transformation in virus strains. It built upon Griffith's experiment from 1928, which showed that potent but dead virus strains can still transfer their properties to usually harmless strains, via something called the transforming principle.
+Avery, MacLeod and McCarty proved that the relevant component for this to work was DNA and not like previously assumed specific proteins, since the phenomenon persists when the solution is treated with protein dissolving substance, but seizes to persist when treated with DNA dissolving agents.
 
 The most direct and controlled form of genetic modification is inserting strings of DNA into existing cells to transfer properties from one organism to another, deactivating- or cutting them out to suppress traits.
-The most prominent example of this to date is the CRISPR/Cas method, which accomplishes this semi-reliably via the use of bacteria, but currently still struggles with off target effects, i.e. unforeseen changes outside of the intended locality.
-While originally discovered in 1987, its use for genetic editing was only demonstrated in 2011 and since then a tremendous amount of research went into improving effectivity, safety and specificity, as well as finding applications in numerous in agriculture and medicine.
+The most prominent example of this to date is the Clustered Regularly Interspaced Short Palindromic Repeats and Associated Proteins (CRISPR/Cas) method, which accomplishes this semi-reliably via the use of bacteria, but currently still struggles with off target effects, id est unforeseen changes outside of the intended locality.
+While originally discovered in 1987, its use for genetic editing was only demonstrated in 2011 and since then a tremendous amount of research went into improving effectivity, safety and specificity, as well as finding numerous applications in agriculture and medicine.
 It's important to keep in mind that current methods operate on single cells, which while passing the modified DNA on during mitosis, are clearly outnumbered by non-modified cells\cite{crispr}.
 This can be worked around in three ways.
-Modify a sufficient number of cells (most likely infeasible for broad changes), modify in an early stage of development, where only a number of cells exist, or germline editing, which means editing the parents germ cells (cells involved in reproduction) in way that the offspring inherits the changes.
+\begin{itemize}
+\item Modify a sufficient number of cells (most likely infeasible for broad changes)
+\item Modify in an early stage of development, where only a number of cells exist
+\item Germline editing, which means editing the parents germ cells (cells involved in reproduction) in way that the offspring inherits the changes.
+\end{itemize}
 The third approach differs from the other (so called somatic / nonheritable) techniques in that it can irreversibly affect future generations of offspring with undoubtedly vast consequences, which is why there is widespread advocation to refrain from practicing it in humans\cite{dontedit}.
 
-\subsection{Genome Analysis}
 Necessary for the manipulation of genetic material is first understanding DNA, its function and effects of deviation from the norm, which this paper will focus primarily on.
 Fundamental understanding breaks down into two steps.
 Firstly DNA Sequencing, which means simply determining the sequence of DNA base pairs without interpretation. It enables the diagnosis of point mutations and similarity measurement, as well as forming the base for further analysis.
@@ -85,13 +85,14 @@ Firstly DNA Sequencing, which means simply determining the sequence of DNA base 
 Secondly gene association studies, which aim to map genetic variants to observable traits and come in two varieties. 
 Genome-wide association studies (GWAS) hope to uncover any correlation between strings of DNA and phenotype, while specific genetic association or gene linkage studies focus on specific variants of a gene (alleles) and examine whether they frequently cooccur with disease\cite{gwas}.
 This endeavour presents numerous challenges stemming from the sheer complexity of the mechanisms at hand.
-Part of the reason this differs from an exact science is changes an organisms environment has on its genome. It is estimated as much 98\% of human DNA is noncoding, id est lacks any apparent purpose\cite{noncoding}. Some of it however is not entirely dysfunctional, rather it is dynamically activated and silenced in a process known as epigenetics changes by so called regulatory genes\cite{epigenetics}.
+Part of the reason this differs from an exact science is changes an organisms environment has on its genome. It is estimated as much 98\% of human DNA is noncoding, id est lacks any apparent purpose\cite{noncoding}. Some of it however is not entirely dysfunctional, rather it is dynamically activated and silenced in a process known as epigenetic change by so called regulatory genes\cite{epigenetics}.
 This means the exact same sequence of DNA can express itself differently, making direct conclusions about the significance of a specific snippet fall short of reliability.
 
-In 2003 with the official completion of the Human Genome Project (HGP) this has been accomplished\cite{HGPFAQ}.
+In 2003 with the official completion of the Human Genome Project (HGP) sequencing has been accomplished\cite{HGPFAQ}.
 The human genome consists of approximately 3.3 billion base pairs, by cross referencing a healthy genome, single point mutations can be effortlessly identified in theory, especially with modern high-throughput analysis tools\cite{rawal}.
-Unfortunately in the context of genetics this notion of a healthy genome is vague. Not only does a healthy genome not exist, simply averaging the genome of a few relatively healthy adults would do it no justice. Changes in DNA can also come in the form of deletion or addition of bases rendering traditional similarity metrics useless as an applicable method would have to be alignment free, in other words agnostic to the exact position in sequence, rather it should recognize subsequences or repetitions anywhere they show up and compare the frequency. Through the nature of mutation, the 'average genome' also varies widely regionally, the HGP in particular faced criticism for overrepresenting caucasian DNA, owed to the fact that it was conducted on anonymous donations of DNA in the USA\cite{HGPcritic}.
+Unfortunately in the context of genetics this notion of a healthy genome is vague. Not only does a healthy genome not exist, simply averaging the genome of a few relatively healthy adults would do the matter no justice. Changes in DNA can also come in the form of deletion or addition of bases rendering traditional similarity metrics useless as an applicable method would have to be alignment free, in other words agnostic to the exact position in sequence, as it needs to recognize subsequences or repetitions anywhere they show up and compare the frequency. Through the nature of mutation, the 'average genome' also varies widely regionally, the HGP in particular faced criticism for overrepresenting caucasian DNA, owed to the fact that it was conducted on anonymous donations of DNA in the USA\cite{HGPcritic}.
 It should therefore be seen more like a reference frame to possibly detect deviation.
+
 Cataloguing mutations is useful but by itself often provides little insight, as chances are the mutation occurred a noncoding part.
 Even when mutation occurs in regulatory sequences or as part of a gene single mutations these usually have little effect.
 Its important to keep in mind that with mutations being so common, each cell has a slightly different sequence. The only mutations they share are those that occurred in the germ cells that formed the zygote or in the very early stages afterwards.
@@ -104,13 +105,13 @@ The unlikely unlikely case that DNA damage results in neither of these scenarios
 \section{Who Are You}
 
 \subsection{DNA and Identity}
-\textit{Who am I} is a question of humankind. Many try to find an answer to it - and if not, they will be confronted with opinions of others without being asked. Sociologist Abels describes identity as the answer to the question. 
-In addition to that, he proposes the thesis that in advanced modernity we are increasingly asked the question of our own identity. 
+\textit{Who am I} is a question of humankind. Many try to find an answer to it - and if not, they will be confronted with opinions of others without being asked. Sociologist Abels describes identity as the answer to this question. 
+In addition to that, he proposes that in advanced modernity we are increasingly asked the question of our own identity. 
 As a result, people start to wonder whether they really know or want to know everything about themselves, or whether they have the courage and strength to face uncomfortable truths. 
-According to Abels, identity is a term that decides individuals from one another\cite{abelsidentity}.
+According to Abels, identity is what distinguishes individuals from one another\cite{abelsidentity}.
 
 Identity is a concept in numerous disciplines, from psychology and pedagogy to sociology, ethnology, social and cultural anthropology, historical and literary studies to philosophy, and beyond that in many trans- and interdisciplinary debates, and has been for decades. 
-To pursue all approaches would probably require a separate paper.
+To pursue all approaches would require more than a separate paper.
 The Oxford English Dictionary defines identity as follows: "The sameness of a person or thing at all times or in all circumstances; the condition or fact that a person or thing is itself and not something else; individuality, personality"\cite{oxford}. Hence, identity is a constant that applies to an individual's life. 
 So, how is DNA related to identity? 
 
@@ -118,7 +119,7 @@ As explained in the previous chapter, the human genome consists of about 3.3 bil
 Therefore, every individual has a unique genetic makeup, their own distinct form of the human genome. 
 DNA remains unchanged throughout all stages of our growth, development, and degeneration. 
 The individual’s DNA sequences are stable despite the replacement of chemical elements. 
-They persist irrespective of damage to DNA due to random accidents. The sequences do not depend on cognitive abilities or consciousness. 
+They persist irrespective of DNA damage due to random accidents. The sequences do not depend on cognitive abilities or consciousness. 
 The Alzheimer’s sufferer who has lost most of her memory has the same genetic base as she had as an infant without self-awareness, or as an adult during the peak of a successful career.
 It is the same from the first instant of an individual’s existence to his or her last breath\cite{dnaidentity}.
 
@@ -154,7 +155,7 @@ Coupled with concerns about the sample collection process for example by religio
 
 \subsection{Commercial Aspect of Identity}
 DNA tests are more popular than ever. 
-In 2018, the global direct-to-consumer genetic test market was valued at approximately 824.1 million USD and is estimated to grow to 6,364.5 million USD by 2028. This is more than an estimated sevenfold increase over a 10-year period.
+In 2018, the global direct-to-consumer genetic test market was valued at just over 800 million USD and is estimated to grow to around 6.3 billion USD by 2028. This is more than an estimated sevenfold increase over a 10-year period.
 There are multiple reasons responsible for bolstering the industry demand.
 Firstly, there is the rise in the public awareness. Strategic partnerships with topic-related television programs offer optimal advertising space for suitable target groups.
 Best example of this is German television show "Julia Leischik sucht – Bitte melde dich", the official partner of Ancestry\cite{ancestrywebsite}. In this Real-life documentary series are commissioned by relatives to find people who have not been seen for years, and sets out to find them as soon as she has enough information about the missing person. 
@@ -186,7 +187,7 @@ The marketing methods of the websites partly explain the growing popularity of D
 
 Prior to the accessibility of DNA testing to the general population, learning more about the history of one's ancestors was a difficult undertaking. 
 Of course, this was only possible under the condition that one can show clues such as relatives who are still alive or the names of some ancestors.
-However, this does not exclude the possibility of untruths being told about one's own family history or documents being embellished. 
+However, this does not exclude the possibility of stories misrepresenting history being told about one's own family history or documents being embellished. 
 Especially in cases that do not correspond to the image of the social norm, such as illegitimate children or incest, a lot has been covered up.
 And at that point, there was no other option but to let the past rest.
 However, with direct-to-consumer DNA testing, everyone has the opportunity to learn more about their own family history.
@@ -203,7 +204,7 @@ In addition to the opportunity to learn more about one's own family, many geneol
 Genetic tests can be helpful in establishing evidence for the parenthood of a person for a case like child custody and support. 
 The results of genetic test can also be used as a support for placing a parent’s name on the birth certificate of a child or for settling disputes in child custody laws. However, whether the sampling is done with the consent of all parties tested is not the responsibility of the genetic websites.
 
-Giving people knowledge of their genetic code, advocates of such services argue, can help them make better decisions about lifestyle and health. 
+Giving people knowledge about their genetic code, advocates of such services argue, can help them make better decisions about lifestyle and health. 
 Although there are no representative studies on this, additional information about one's own identity can lead to more self-reflection and thus to a more conscious life. 
 Twin and family studies have showed that personality traits are moderately heritable, and can predict various lifetime outcomes, including psychopathology.
 Despite considerable efforts over the past several decades and major progress toward unraveling the genetic etiology of personality traits, the genetic variants that influence personality are only beginning to be identified\cite{geneticspersonality}. 
@@ -236,7 +237,7 @@ Fingerprints, blood splatter, hair, skin flake, salvia, and other fluids – the
 With the progression of forensic genetics in the last 35 years, many crime offenders have been identified because of the ability to extract DNA profiles\cite{machado}. 
 In practice, forensic testing uses DNA sequences to identify an individual for legal purposes. Subsequently, a DNA profile is created for each individualised DNA trace. 
 This could be, for example, a biological trace at a crime scene that can be clearly assigned to one person. Other applications would be the identification of a corpse that has become visually unrecognisable due to decay or the assignment of a body part after a natural disaster.
-According to Interpol, 63 percent of the asked National Central Bureaus reported having a DNA database (a searchable repository) which store over 10 million DNA profiles combined\cite{interpol}. 
+According to Interpol, 63\% of the surveyed National Central Bureaus reported having a DNA database (a searchable repository) which store over 10 million DNA profiles combined\cite{interpol}. 
 
 The controversy around privacy versus surveillance applies to genome analysis as much as to any sensitive technology. 
 Germanys Federal Criminal Police Office describes the evolution of the usage of DNA analysis as going from a supplement to the "classic" identification method of fingerprints to an equal and self-evident means of securing evidence\cite{bkapres}. 
@@ -252,7 +253,7 @@ There are a number of factors that help mitigate the intrusions of DNA use, at l
 But it will be several years before authorities can look at the genetic code and put together a composite picture of a person. 
 So while one's DNA has the potential to reveal an enormous amount of information about an individual, at this stage, authorities are unable to identify enough genes, their functions, or their expression patterns to actually reveal the information.
 
-DNA should nevertheless be tracked and used carelessly. However, statistics from the German Federal Criminal Police Office show that in addition to theft or murder, cases of verbal abuse have also led to hits in DNA analysis\cite{bkastat}. 
+Nevertheless DNA should not be tracked and used carelessly. However, statistics from the German Federal Criminal Police Office show that in addition to theft or murder, cases of verbal abuse have also led to hits in DNA analysis\cite{bkastat}. 
 What kind of cases make it legitimate to order a genome analysis after an insult is not explained – but the DNA profiles remain in the forensic database. 
 It was not until 2008 that the European Court of Human Rights ruled a retention regime which permits the indefinite retention of DNA records of both convicted and non-convicted (“innocent”) individuals is disproportionate\cite{smarpervsuk}. 
 As a consequence, the Protection of Freedoms Act 2012 was implemented in the UK to permit the indefinite retention of DNA profiles of most convicted individuals and temporal retention for some first-time convicted minors and innocent individuals on the National DNA Database\cite{protectionoffreedomsact}. 
@@ -260,7 +261,7 @@ It is not yet certain whether other countries will follow suit with this data pr
 
 Unfortunately, some countries have already disregarded the actual purpose of the national DNA databases.
 In 2015, Kuwait anncounced the mandate that all 1.3 million citizens and 2.9 million foreign residents have their DNA tested and placed into a database.
-The law followed a deadly suicide attack on a mosque in the country's capital\cite{kuweit1}. Fortunately, the country's Constitutional Court ruled that the law violates the constitutional guarantee of personal freedom\cite{kuweit2}.
+The law followed a terrorist attack on a mosque in the country's capital\cite{kuweit1}. Fortunately, the country's Constitutional Court ruled that the law violates the constitutional guarantee of personal freedom\cite{kuweit2}.
 China is currently criticized by human rights groups and Uighur activists for using its comprehensive DNA database to chase down any Uighurs who resist conforming to the campaign\cite{nytimes}. From these examples it can be seen that national DNA databases can be misused for surveillance, to identify and oppress ethnic groups and they are a useful tool for a potential police state.
 
 Etzioni provides an interesting thought on the boundary between privacy and surveillance. He argues that the benefits for society of storing the DNA of a convicted of or even suspected of breaking the law once in the database outweigh his or her individual privacy rights. 
@@ -289,7 +290,7 @@ As will be discussed in the following chapter, subpar treatment grounded in geno
 
 \subsubsection{Commercial Use}
 Profit as the primary incentive manages to corrupt even the most honourable endeavour.
-Commercial gene testing and therapy raises the same questions about motive and ethical obligation to help that plagued the medical ethics for millennia.
+Commercial gene testing and therapy raises the same questions about motive and ethical obligation to help that plagued medical ethics for millennia.
 Testing costs being inflated because of patents can hardly be in accordance with public interest, which sparks discussion about the next point\cite{publicopinion}.
 
 \subsubsection{Use of Public Resources}
@@ -326,8 +327,8 @@ It is therefore vital that we retain trust in and refine the methodology of gene
 
 \section{Consequences for Society: Social Compatibility}
 
-\subsection{Eugenics}
-Eugenics, subject to study under the field of bioethics, has been of concern to humanity since the beginning of civilization. While it literally translates to "good birth", it encompasses all attempts at improvement to the biological nature of the human race as a whole\cite{eugenics}. 
+\subsection{Manipulation}
+Manipulation as an attempt to improve to the biological nature of the human race as a whole is studied in the field of bioethics and under the name of Eugenics and has been of concern to humanity since the beginning of civilization. While it literally translates to "good birth", it encompasses methods going far beyond natal care\cite{eugenics}. 
 
 History has seen it as the justification for a number of crude methods like infanticide in Sparta and forced sterilization under the Nazi regime, some of which are still carried out around the world today. Yet the tools we are soon to wield at the current pace of development towards controlled genetic manipulation go far beyond that, making a new form of eugenics a viable option towards social good. \newline
 For the purpose of eugenics, genetic manipulation and genome analysis of fertilized cells to select which one to implement are almost equivalent, as both manipulate chance in our favor. The exact method is therefore irrelevant to the discussion in this chapter.
@@ -356,7 +357,10 @@ On the other hand, a statement about maximizing joy cannot be made as easily. Wh
 With standards rising it could be equally difficult to fit in so there is no reason to believe a genetically enhanced society would constantly be ecstatic about its accomplishments.
 Futhermore most of the prior arguments assume total confidence in the human ability to manipulate genes, which quite frankly is far from being warranted.
 There is good reason most of the biological world has agreed to put experimentation in humans on hold\cite{dontedit}.
-\vspace{1cm}
+
+\subsection{Analysis}
+
+\newpage
 
 \section{Conclusion and Outlook}
 Since the Assyrians and Mendel, a long time has passed. The development of Genome Analysis has become cheaper and is useful in many areas. 

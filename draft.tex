@@ -6,9 +6,10 @@
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{algorithmic}
 \usepackage{graphicx}
-\usepackage{chronosys}
 \usepackage{textcomp}
 \usepackage{xcolor}
+
+\usepackage{enumitem}
 
 \usepackage{wrapfig}
 \usepackage{caption}
@@ -65,6 +66,12 @@ Except for the start and three stop codons (AUG, UAA, UAG and UGA respectively),
 
 To get an idea of the factors involved in this procedure, the exact enzymes which break apart, or process DNA and its derivates are irrelevant. It is simply important to understand that every protein that makes up life is created from amino acids, the why, when, how, how much and what of which is encodable in the order of short snippets of bases that lie between start and stop codons.
 
+\begin{figure}[h!]
+	\includegraphics[width=\textwidth/2]{timeline.png}
+	\caption{A rough timeline since Griffiths Experiment}
+	\label{timeline}
+\end{figure}
+
 Human interference in evolution to bend nature to our will goes back at least to 2000 B.C. with strong evidence that the Assyrians artificially pollinated date trees\cite{mayr}.
 Since then, several methods with the shared goal of reinforcing desirable characteristics and eradicating undesirables ones developed, most dominantly selective breeding, with the recent modification called mutation breeding, the practice of directly exposing organisms, usually seeds, to mutagenic material to positively augment the mutation rate and thus the chance of new positive traits being present\cite{mutationbreeding}.
 
@@ -75,20 +82,15 @@ The most direct and controlled form of genetic modification is inserting strings
 The most prominent example of this to date is the Clustered Regularly Interspaced Short Palindromic Repeats and Associated Proteins (CRISPR/Cas) method, which accomplishes this semi-reliably via the use of bacteria, but currently still struggles with off target effects, id est unforeseen changes outside of the intended locality.
 While originally discovered in 1987, its use for genetic editing was only demonstrated in 2011 and since then a tremendous amount of research went into improving effectivity, safety and specificity, as well as finding numerous applications in agriculture and medicine.
 
-To recapitulate, this approximate timeline in Figure 1 should give an overview
-\vspace{0.5cm}
-	\startchronology[startyear=1920, stopdate=2022,arrowheight=0.2cm,arrowwidth=0.2cm,width=8cm,height=0.05cm]
-	\chronoevent{2022}{This Paper}
-	\chronoevent[markdepth=120pt]{2011}{Successful CRISPR Application}
-	\chronoevent[markdepth=80pt]{2003}{HGP Completion}
-	\chronoevent[markdepth=40pt]{1996}{Cloning of Dolly}
-	\chronoevent{1987}{CRISPR Discovery}
-	\chronoevent[markdepth=40pt]{1944}{A-Ml-Mc Experiment}
-	\chronoevent{1928}{Griffiths Experiment}
-	\stopchronology
+
+To recapitulate, figure \ref{timeline} should give an overview.
+
+
+
+
 It's important to keep in mind that current methods operate on single cells, which while passing the modified DNA on during mitosis, are clearly outnumbered by non-modified cells\cite{crispr}.
 This can be worked around in three ways.
-\begin{itemize}
+\begin{itemize}[leftmargin=*]
 \item Modify a sufficient number of cells (most likely infeasible for broad changes)
 \item Modify in an early stage of development, where only a number of cells exist
 \item Germline editing, which means editing the parents germ cells (cells involved in reproduction) in way that the offspring inherits the changes.
@@ -236,7 +238,7 @@ Much bigger potential lies in preventing common disease with either a genetic co
 Advances here have sprouted the field of pharmagenomics, which utilizes genetic information to practice precision medicine.
 Just like ethnicity, genetic profile has been shown to affect drug response, thus using this knowledge to personalize prescriptions can increase effectiveness and lower cost and side effects \cite{costsaving}.
 Predictive genetic testing does not come without concerns from both experts and the public, the most prominent ones will be discussed in the following:
-
+{\parindent0pt
 \subsubsection{Patient Autonomy}
 The primary role of any new medical instrument should be to serve, therefore patient autonomy and informed consent are non-negotiable, which necessitates public education.
 Broad, as well as targeted at populations most susceptible to specific genetic conditions.
@@ -245,7 +247,7 @@ Equally as important is access to testing facilities themselves as well as short
 \subsubsection{Genetic Discrimation}
 As will be discussed in the following chapter, subpar treatment grounded in genome analysis results is no better than discrimination on the basis of sex, race, age or religion.
 
-\subsubsection{Commercial Use}
+ \subsubsection{Commercial Use}
 Profit as the primary incentive manages to corrupt even the most honourable endeavour.
 Commercial gene testing and therapy raises the same questions about motive and ethical obligation to help that plagued medical ethics for millennia.
 Testing costs being inflated because of patents can hardly be in accordance with public interest, which sparks discussion about the next point\cite{publicopinion}.
@@ -266,7 +268,7 @@ Depending on the evolution of public debate on the topic, a scenario in which ge
 This would add additional stress and force people at risk for genetic disease to make a choice between social acceptability and their own health.
 
 Overall the medical sectors holds much potential for the use of gene testing and therapy, with cheaper and more effective treatment, more reliable diagnoses and hope of a cure for previously terminal disease.
-
+}
 \section{Consequences for Society: Social Compatibility}
 Genetic testing has already established itself in the developed world. This chapter deals with the expected consequences of widespread application of analysis and one day manipulation tools, as well as the commercial exploitation of the underlying technology.
 \subsection{Analysis}
@@ -393,7 +395,7 @@ Twin and family studies have showed that personality traits are moderately herit
 
 Despite considerable efforts over the past several decades and major progress toward unraveling the genetic etiology of personality traits, the genetic variants that influence personality are only beginning to be identified\cite{geneticspersonality}. 
 The genetic testing provider 23andMe divides their possible personality traits into three report groups. 
-\begin{itemize}
+\begin{itemize}[leftmargin=*]
 \item The first report is about "Physical Features" which includes information about Hair Photobleaching, Freckles, Skin Pigmentation, and more. 
 \item The secound report focuses on "Taste and Smell" and reveals more about the customers Cilantro Taste Aversion, Sweet vs. Salty, Asparagus Odor Detection, and. 
 \item The third report is called "Weird and wonderful" and is about Photic Sneeze Reflex, Ability to Match Musical Pitch, Misophonia (hatred of the sound of chewing), and more\cite{23personality}.
@@ -404,7 +406,7 @@ The two biggest market players Ancestry and 23andMe have a combined DNA Database
 The previous chapter talked in detail about the need for genetic privacy. Do the providers meet the requirement of their customers?
 
 Laestadius, Rich \& Auer investigated whether 30 different direct-to-consumer genetic testing websites followed the guidelines created by professional and government bodies to promote transparency in two aspects.
-\begin{itemize}
+\begin{itemize}[leftmargin=*]
 \item Transparency regarding confidentiality and privacy.
 \item Use of data
 \end{itemize}
